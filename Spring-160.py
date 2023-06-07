@@ -631,7 +631,6 @@ class compression:
                                                        T2=len(Time_Real1)
                                                        Time_Real4=format(T2,'06b')
                                                        File_information52=Time_Real4+Time_Real1+Time_Real3
-                                                       #print(File_information52)
                                                        C1=bin(Times_10)[2:]
                                                        C5=len(C1)
                                                        C2=C5//8
@@ -861,8 +860,6 @@ class compression:
                                                 while File_information5[:1]!="1":
                                                     if File_information5[:1]=="0":
                                                         File_information5=File_information5[1:]
-                                                        
-                                                File_information5=File_information5[1:]
                                                
 
                                                 #08122#17#18
@@ -874,8 +871,10 @@ class compression:
                                                 File_information5=File_information5[6:]
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
-                                                Deep5=int(File_information5[:Real_C1],2)
-                                                File_information5=File_information5[Real_C1:]                                            
+                                                
+Deep5=int(File_information5[:Real_C1],2)
+
+File_information5=File_information5[Real_C1:]                                            
 
 
                                                 #08014 #15
@@ -886,13 +885,16 @@ class compression:
                                                 File_information5=File_information5[6:]
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
-                                                T_Real=int(File_information5[:Real_C1],2)
-                                                File_information5=File_information5[Real_C1:]                                           
-                                                Real_C=int(File_information5[0:6],2)
+                                                
+T_Real=int(File_information5[:Real_C1],2)
+                                                File_information5=File_information5[Real_C1:]                                            
+    
+Real_C=int(File_information5[0:6],2)
                                                 File_information5=File_information5[6:]
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
-                                                Add=int(File_information5[:Real_C1],2)
+                                                
+add=int(File_information5[:Real_C1],2)
                                                 File_information5=File_information5[Real_C1:]                                                   
 
                                                 #18020d47 #11
@@ -906,12 +908,12 @@ class compression:
                                                 
                                                 if len(File_information5)==0:
                                                     print("Wrong file!")
-                                                    raise SystemExit          
-                                                Real_C=int(File_information5[0:6],2)
+                                                    raise SystemExit          Real_C=int(File_information5[0:6],2)
                                                 File_information5=File_information5[6:]
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
-                                                T14=int(File_information5[:Real_C1],2)
+                                                
+T14=int(File_information5[:Real_C1],2)
                                                 File_information5=File_information5[Real_C1:]                                                                                             
                                                 
 
@@ -930,7 +932,8 @@ class compression:
                                                 File_information5=File_information5[6:]
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
-                                                Divided_corrdiates=int(File_information5[:Real_C1],2)
+                                                
+Divided_corrdiates=int(File_information5[:Real_C1],2)
                                                 File_information5=File_information5[Real_C1:]                                                   
                                                 
                                                 if len(File_information5)==0:
@@ -940,7 +943,8 @@ class compression:
                                                 File_information5=File_information5[6:]
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
-                                                N10=int(File_information5[:Real_C1],2)
+                                                
+N10=int(File_information5[:Real_C1],2)
                                                 File_information5=File_information5[Real_C1:]                                                   
                                                 #print(N10)
                                                 
