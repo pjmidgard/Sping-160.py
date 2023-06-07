@@ -631,7 +631,7 @@ class compression:
                                                        T2=len(Time_Real1)
                                                        Time_Real4=format(T2,'06b')
                                                        File_information52=Time_Real4+Time_Real1+Time_Real3
-                                                       print(File_information52)
+                                                       #print(File_information52)
                                                        C1=bin(Times_10)[2:]
                                                        C5=len(C1)
                                                        C2=C5//8
