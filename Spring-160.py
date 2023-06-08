@@ -44,6 +44,7 @@ class compression:
                             raise SystemExit
 
                     x=0
+                    C1=1
                     x1=0
                     x2=0
                     x3=0
@@ -74,6 +75,10 @@ class compression:
                     File_information6_times3=0
 
                     if i==2:
+                        if nameas=="f.bin":
+                            print("This wrong name file!")
+                            raise SystemExit
+                          
                         if nameas[nac-4:nac]==".bin":
                    
                         	nameas=name[:nac-4]
@@ -84,7 +89,9 @@ class compression:
                         elif nameas[nac-4:nac]!=".bin":
                                 print("Sorry, this is not binary file!")
                                 raise SystemExit
-                   
+                                
+                        
+                                            
                     if i==1:
                         
                         nameas=name+".bin"
