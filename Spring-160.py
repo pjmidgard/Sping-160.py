@@ -76,12 +76,12 @@ class compression:
                     
                     if i==1:
                         if nameas=="f":
-                            print("This wrong name file!")
+                            print("This program F It can't change!")
                             raise SystemExit
 
                     if i==2:
                         if nameas=="f.bin":
-                            print("This wrong name file!")
+                            print("This program F It can't change!")
                             raise SystemExit
                           
                         if nameas[nac-4:nac]==".bin":
