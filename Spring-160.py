@@ -73,6 +73,11 @@ class compression:
                     
                     compress_or_not_compress=1
                     File_information6_times3=0
+                    
+                    if i==1:
+                        if nameas=="f":
+                            print("This wrong name file!")
+                            raise SystemExit
 
                     if i==2:
                         if nameas=="f.bin":
