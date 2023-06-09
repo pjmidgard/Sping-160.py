@@ -84,14 +84,21 @@ class compression:
                     compress_or_not_compress=1
                     File_information6_times3=0
                     
-                    if i==1:
-                        if nameas=="f":
-                            print("This program F It can't change!")
-                            raise SystemExit
+                    with open("f.bin", "wb") as f2:
+                                            
+                      f2.write(width_bits3)                        
+                                            	
+                    
+              
+                    
+                
+                      
+                            
+     
 
                     if i==2:
                         if nameas=="f.bin":
-                            print("This program F It can't change!")
+                            print("This file It can't change!")
                             raise SystemExit
                           
                         if nameas[nac-4:nac]==".bin":
