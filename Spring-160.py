@@ -97,7 +97,7 @@ class compression:
      
 
                     if i==2:
-                        if nameas[nac-5:nac]=="f.bin":
+                        if nameas=="f.bin":
                             print("This file f.bin It can't change!")
                             raise SystemExit
                           
