@@ -39,6 +39,16 @@ class compression:
 
                     if os.path.exists(name):
                             print('Path is exists!')
+                            if name=="f.bin":
+                                gh="f.bin"
+                                ge="f1.bin"
+                                os.rename(gh,ge)
+                                name="f1.bin"
+                            if name=="f":
+                                gh="f"
+                                ge="f1"
+                                os.rename(gh,ge)
+                                name="f1"
                     else:
                             print('Path is not exists!')
                             raise SystemExit
@@ -1142,4 +1152,4 @@ class compression:
 d=compression()
 
 xw1=d.cryptograpy_compression4()
-print(xw1)
+print(xw1)()
