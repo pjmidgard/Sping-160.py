@@ -656,6 +656,7 @@ class compression:
                                                        
                                                       
                                                        Time_Real3=format(Times_10,C)
+                                                       T1=len(Time_Real3)
                                                        Time_Real1=bin(T1)[2:]
                                                        T2=len(Time_Real1)
                                                        Time_Real4=format(T2,'06b')
@@ -673,7 +674,10 @@ class compression:
 
                                                        
                                                        Time_Real3=format(Divided_corrdiates,C)
+                                                       T1=len(Time_Real3)
                                                        Time_Real1=bin(T1)[2:]
+                                                    
+                                                       
                                                        T2=len(Time_Real1)
                                                        Time_Real4=format(T2,'06b')
                                                        Divided_corrdiates1=Time_Real4+Time_Real1+Time_Real3
@@ -690,6 +694,7 @@ class compression:
 
                                                        
                                                        Time_Real3=format(Times_7,C)
+                                                       T1=len(Time_Real3)
                                                        Time_Real1=bin(T1)[2:]
                                                        T2=len(Time_Real1)
                                                        Time_Real4=format(T2,'06b')
