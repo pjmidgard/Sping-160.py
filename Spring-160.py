@@ -84,9 +84,9 @@ class compression:
                     compress_or_not_compress=1
                     File_information6_times3=0
                     
-                    with open("f.bin", "w") as f2:
+                  
                                             
-                      f2.write("f")                        
+                     
                                             	
                     
               
