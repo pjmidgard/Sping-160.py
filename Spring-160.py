@@ -39,11 +39,11 @@ class compression:
 
                     if os.path.exists(name):
                             print('Path is exists!')
-                            if name=="f.bin":
-                                gh="f.bin"
-                                ge="f1.bin"
-                                os.rename(gh,ge)
-                                name="f1.bin"
+                           
+                           
+                            
+                           
+                              
                             if name=="f":
                                 gh="f"
                                 ge="f1"
