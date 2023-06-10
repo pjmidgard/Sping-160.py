@@ -242,7 +242,7 @@ class compression:
                                 
                                 
                                 if i==1:
-                                    INFO="1"+INFO
+                                  
 
                                                                                              
                                     
@@ -558,19 +558,10 @@ class compression:
                                                                 #print(File_information5_17)
                                                 if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
                                                        lenf=len(File_information5_17)
-                                                       add_bits=""
-                                                       count_bits=8-lenf%8
-                                                       z=0
-                                                       if count_bits!=0:
-                                                               if count_bits!=8:
-                                                                       while z<count_bits:
-                                                                               add_bits="0"+add_bits
-                                                                               z=z+1
-                                                       File_information5_17=add_bits+File_information5_17        
-
-
-
-
+                                                       Time_Real3=bin(lenf2)[2:]
+                                                       T1=len(Time_Real3)
+                                                       Time_Real4=format(T1,'06b')
+                                                       long_file=Time_Real4+Time_Real3
 
 
 
@@ -637,7 +628,7 @@ class compression:
                                                        if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
 
 
-                                                               File_information5_17="1"+XN+Counts
+                                                               File_information5_17="1"+XN+Counts+long_file
                                                                lenf=len(File_information5_17)
                                                                add_bits=""
                                                                count_bits=8-lenf%8
@@ -741,8 +732,11 @@ class compression:
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
                                                 Extract_info=int(File_information5[:Real_C1],2)
-                                                File_information5=File_information5[Real_C1:]                                                     
-                                                      
+                                                File_information5=File_information5[Real_C1:]
+                                                Real_C=int(File_information5[0:6],2)
+                                                File_information5=File_information5[6:]
+                                                long=int(File_information5[:Real_C],2)
+                                                File_information5=File_information5[Real_C:]                                                      
                                                 #08122#17#18
                                     
                                     k1=-2
@@ -1076,9 +1070,12 @@ class compression:
 
 
                                                        if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR:
+             
 
 
-                                                               File_information5_17=bin(Number_of_the_file)[3:]
+                                                               
+                                                               CN="0"+str(long)+"b"
+                                                               File_information5_17=format(Number_of_the_file,CN)
 
                                                                Extract1=1
                                                     
