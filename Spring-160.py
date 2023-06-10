@@ -115,7 +115,7 @@ class compression:
                                             
                     if i==1:
                         
-                        nameas=name+".bin"
+                        nameas=name+"s.bin"
                     
                     	
                     nac=len(nameas)
