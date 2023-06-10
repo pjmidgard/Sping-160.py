@@ -89,7 +89,7 @@ class compression:
                     if i==2:
 
                           
-                        if nameas[nac-5:nac]=="f.bin":
+                        if nameas=="f.":
                                 print("Sorry, wrong file name!")
                                 raise SystemExit        
                         elif nameas[nac-4:nac]==".bin":
