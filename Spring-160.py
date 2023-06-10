@@ -147,10 +147,7 @@ class compression:
 
                        # Read the whole file at once
                         data = binary_file.read()
-                        #if i==2:
-                            #import paq
-                            #data=paq.decompress(data)
-                          
+
                         
                      
                             
@@ -768,8 +765,7 @@ class compression:
                                   
                                                             
                                             with open(nameas, "wb") as f2:
-                                                #import paq
-                                                #width_bits3=paq.compress(width_bits3)
+
                                                 
                                                 f2.write(width_bits3)
                                                     
