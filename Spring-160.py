@@ -88,11 +88,14 @@ class compression:
 
                     if i==2:
 
-                          
                         if nameas=="f.":
-                                print("Sorry, wrong file name!")
-                                raise SystemExit        
+                                print("Sorry, wrong file name")
+                                raise SystemExit                               
+                      
                         elif nameas[nac-4:nac]==".bin":
+                           
+                            
+                          
                    
                         	nameas=name[:nac-4]
                         	nac=len(nameas)
@@ -112,7 +115,7 @@ class compression:
                                             
                     if i==1:
                         
-                        nameas=name+"spring.bin"
+                        nameas=name+".bin"
                     
                     	
                     nac=len(nameas)
@@ -239,21 +242,14 @@ class compression:
                                 
                                 
                                 if i==1:
-                                    if  int(INFO,2)==0:
-                                                    long_of_file=len(INFO)
-                                                    
-                                                    Nuber_zero_or_else=int(INFO,2)
-                                                    long_of_file+=1
-                                                    #print(long_of_file)
-                                                    if Nuber_zero_or_else==0 and long_of_file<=(2**30)-1:
-                                                                                                 long_of_file_N=format(long_of_file,'040b')
-                                                                                                 Compress_zeros=long_of_file_N
+                                    INFO="1"+INFO
+
                                                                                              
                                     
                                     k1=-2
                                     k2=-1
                                     X1=1
-                                   
+                                    
                                     
                                    
                                     
@@ -261,6 +257,7 @@ class compression:
                                     
                                     Extract1=0
                                     Times_10=1
+                                    counts=-1
                                   
                                     Times_11=-1
                                     Times_12=1
@@ -299,7 +296,7 @@ class compression:
                                                     University=0
                                                     k1=-1
                                                     k2=0
-                                                    
+                                                    counts=-1
                                                     X1+=1                                          
                                             	
                                             if X1>44739242:
@@ -319,6 +316,7 @@ class compression:
                                             Times_11=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             N_5=int(University_file[(X2*8)+24:(X2*8)+32],2)
                                             Times_7=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            counts+=1
                                             if N_5>=68719476736:
                                                 N_5=0
                                             elif Times_12>=2**26 and Times_10>=2**26 and N_5>=2**26 and Times_7>=2**26:
@@ -583,11 +581,7 @@ class compression:
                                                     
                                                        
 
-                                                       Time_Real3=bin(lenf2)[2:]
-                                                       T1=len(Time_Real3)
-                                                       Time_Real4=format(T1,'06b')
-                                                       long3=Time_Real4+Time_Real3
-                                                       
+                                                                          
 
 
 
@@ -595,7 +589,7 @@ class compression:
 
                                                        
                                                        
-                                                       C1=bin(Times_11)[2:]
+                                                       C1=bin(X1)[2:]
                                                        C5=len(C1)
                                                        C2=C5//8
                                                        C4=C5%8
@@ -606,7 +600,7 @@ class compression:
                                                        C="0"+str(C3)+"b"
                                                        
                                                        
-                                                       Time_Real3=format(Times_11,C)
+                                                       Time_Real3=format(X1,C)
                                                        T1=len(Time_Real3)
                                                     
                                                        Time_Real1=bin(T1)[2:]
@@ -614,8 +608,8 @@ class compression:
                                                        Time_Real4=format(T2,'06b')
                                                        
 
-                                                       Add_N=Time_Real4+Time_Real1+Time_Real3
-                                                       C1=bin(Times_12)[2:]
+                                                       XN=Time_Real4+Time_Real1+Time_Real3
+                                                       C1=bin(counts)[2:]
                                                        C5=len(C1)
                                                        C2=C5//8
                                                        C4=C5%8
@@ -626,89 +620,15 @@ class compression:
                                                        C="0"+str(C3)+"b"
 
                                                       
-                                                       Time_Real3=format(Times_12,C)
+                                                       Time_Real3=format(counts,C)
                                                        T1=len(Time_Real3)
                                                    
                                                        Time_Real1=bin(T1)[2:]
                                                        T2=len(Time_Real1)
                                                        Time_Real4=format(T2,'06b')
-                                                       Time_Real2=Time_Real4+Time_Real1+Time_Real3
-                                                       
-                                                       C5=len(C1)
-                                                       C1=bin(N_5)[2:]
-                                                       C2=C5//8
-                                                       C4=C5%8
-                                                       if C4!=0:
-                                                           C3=(C2+1)*8
-                                                       else:
-                                                           C3=C2*8
-                                                       C="0"+str(C3)+"b"
+                                                       Counts=Time_Real4+Time_Real1+Time_Real3
                                                        
 
-
-                                                       Time_Real3=format(N_5,C)
-                                                       T1=len(Time_Real3)
-                                                   
-                                                       Time_Real1=bin(T1)[2:]
-                                                       T2=len(Time_Real1)
-                                                       Time_Real4=format(T2,'06b')
-                                                       File_information52=Time_Real4+Time_Real1+Time_Real3
-                                                       #print(File_information52)
-                                                       C1=bin(Times_10)[2:]
-                                                       C5=len(C1)
-                                                       C2=C5//8
-                                                       C4=C5%8
-                                                       if C4!=0:
-                                                           C3=(C2+1)*8
-                                                       else:
-                                                           C3=C2*8
-                                                       C="0"+str(C3)+"b"
-                                                       
-                                                      
-                                                       Time_Real3=format(Times_10,C)
-                                                       T1=len(Time_Real3)
-                                                       Time_Real1=bin(T1)[2:]
-                                                       T2=len(Time_Real1)
-                                                       Time_Real4=format(T2,'06b')
-                                                       File_information53=Time_Real4+Time_Real1+Time_Real3
-                                                       C1=bin(Divided_corrdiates)[2:]
-                                                       C5=len(C1)
-                                                       C2=C5//8
-                                                       C4=C5%8
-                                                       if C4!=0:
-                                                           C3=(C2+1)*8
-                                                       else:
-                                                           C3=C2*8
-                                                       C="0"+str(C3)+"b"
-                                                    
-
-                                                       
-                                                       Time_Real3=format(Divided_corrdiates,C)
-                                                       T1=len(Time_Real3)
-                                                       Time_Real1=bin(T1)[2:]
-                                                    
-                                                       
-                                                       T2=len(Time_Real1)
-                                                       Time_Real4=format(T2,'06b')
-                                                       Divided_corrdiates1=Time_Real4+Time_Real1+Time_Real3
-                                                       C1=bin(Times_7)[2:]
-                                                       C5=len(C1)
-                                                       C2=C5//8
-                                                       C4=C5%8
-                                                       if C4!=0:
-                                                           C3=(C2+1)*8
-                                                       else:
-                                                           C3=C2*8
-                                                       C="0"+str(C3)+"b"
-                                                    
-
-                                                       
-                                                       Time_Real3=format(Times_7,C)
-                                                       T1=len(Time_Real3)
-                                                       Time_Real1=bin(T1)[2:]
-                                                       T2=len(Time_Real1)
-                                                       Time_Real4=format(T2,'06b')
-                                                       N10=Time_Real4+Time_Real1+Time_Real3
 
 
 
@@ -717,7 +637,7 @@ class compression:
                                                        if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
 
 
-                                                               File_information5_17="1"+File_information52+File_information53+Add_N+long3+Time_Real2+Divided_corrdiates1+N10
+                                                               File_information5_17="1"+XN+Counts
                                                                lenf=len(File_information5_17)
                                                                add_bits=""
                                                                count_bits=8-lenf%8
@@ -733,20 +653,7 @@ class compression:
                                                                Extract1=1
                                                       
 
-                                                       if int(INFO,2)==0:
-                                                               File_information5_17=Compress_zeros
-                                                               lenf=len(File_information5_17)
-                                                               add_bits=""
-                                                               count_bits=8-lenf%8
-                                                               z=0
-                                                               if count_bits!=0:
-                                                                   if count_bits!=8:
-                                                                       while z<count_bits:
-                                                                               add_bits="0"+add_bits
-                                                                               z=z+1
 
-                                                               File_information5_17=add_bits+File_information5_17
-                                                               Extract1=1
                                                     
                                                  
                                     if Extract1==1:                
@@ -779,57 +686,8 @@ class compression:
                                     		
                                 if i==2:
                                    
-                                    File_information5_17=""
-                                    lenf9=len(File_information5_17)
-                                    if  len(INFO)<=(5*8):
-                                                 
-                                                    File_information5_17=File_information5_17
-                                                    #print(Number_zeroes)
-                                                    Number_zeroes=int(INFO,2)
-                                                    Number_zeroes-=1
-                                                    File_information5_18=""
-                                                   
-                                                    Number_zeroes1=0
-                                                    while Number_zeroes!=Number_zeroes1:
-                                                            File_information5_18=File_information5_18+"0"
-                                                            Number_zeroes1+=1
-                                                    File_information5_17=File_information5_18
 
-                                                    lenf=len(File_information5_17)
-                                                    add_bits=""
-                                                    count_bits=8-lenf%8
-                                                    z=0
-                                                    if count_bits!=0:
-                                                            if count_bits!=8:
-                                                                    while z<count_bits:
-                                                                            add_bits="0"+add_bits
-                                                                            z=z+1
 
-                                                    File_information5_17=add_bits+File_information5_17
-
-                                                    L=len(File_information5_17)
-
-                                                    n = int(File_information5_17, 2)
-
-                                                    width_bits=len(File_information5_17)
-
-                                                    width_bits=(width_bits//8)*2
-
-                                                    width_bits=str(width_bits)
-                                                    width_bits="%0"+width_bits+"x"
-                                                    width_bits3=binascii.unhexlify(width_bits % n)
-                                                    width_bits2=len(width_bits3)
-                                                    add_bitszzza=""
-                                                    add_bitszs=""
-                                                    File_information5_2=Times_6
-                                                    with open(nameas, "wb") as f2:
-                                                            f2.write(width_bits3)
-                                                    x2 = time()
-                                                    x3=x2-x
-                                                    xs=float(x3)
-                                                    xs=str(xs)
-                                                    
-                                                    return xs;
                                    
 
                                     
@@ -848,30 +706,7 @@ class compression:
                                                             
                                               
                               
-                                    File_information5=File_information5_2
-                                   
-                                    
-                                   
-                                    
-                                    
-                                    
-                                    lenf6=len(File_information5)
 
-                                    add_bits=""
-
-                                    Times_6=""
-
-                                    #Extract
-
-                                    INFO10=""
-                                    Translate_info_Decimal=""
-                                  
-                                    Number_add_plus_one=""
-                                  
-                                    Times_6=""
-                                
-                                    Number_of_the_file=0
-                                    
                                  
 
                                     
@@ -880,6 +715,7 @@ class compression:
                                         
                                         if   File_information6_times2==0:
                                             File_information5=INFO
+                                            #print(INFO)
                                            
                                         if   File_information6_times2==0:
                                 
@@ -889,258 +725,385 @@ class compression:
                                                         File_information5=File_information5[1:]
                                                         
                                                 File_information5=File_information5[1:]
-                                               
-
-                                                #08122#17#18
-                                                if len(File_information5)==0:
-                                                    print("Wrong file!")
-                                                    raise SystemExit                                                     
-                                                                                                
-                                                Real_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
-                                                Real_C1=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                Deep5=int(File_information5[:Real_C1],2)
-                                                File_information5=File_information5[Real_C1:]                                            
-
-
-                                                #08014 #15
-                                                if len(File_information5)==0:
-                                                    print("Wrong file!")
-                                                    raise SystemExit                                                     
-                                                Real_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
-                                                Real_C1=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                T_Real=int(File_information5[:Real_C1],2)
-                                                File_information5=File_information5[Real_C1:]                                           
-                                                Real_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
-                                                Real_C1=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                Add=int(File_information5[:Real_C1],2)
-                                                File_information5=File_information5[Real_C1:]                                                   
-
-                                                #18020d47 #11
-                                                if len(File_information5)==0:
-                                                    print("Wrong file!")
-                                                    raise SystemExit                                                     
-                                                Real_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
-                                                long=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                
-                                                if len(File_information5)==0:
-                                                    print("Wrong file!")
-                                                    raise SystemExit          
-                                                Real_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
-                                                Real_C1=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                T14=int(File_information5[:Real_C1],2)
-                                                File_information5=File_information5[Real_C1:]                                                                                             
-                                                
-
-
-                                                #0010ffff #6
-                                                
-                                                
-                                                Reality=T14
-                                                #000801 #3
-                                                
-                                                
-                                                if len(File_information5)==0:
-                                                    print("Wrong file!")
-                                                    raise SystemExit                                                    
-                                                Real_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
-                                                Real_C1=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                Divided_corrdiates=int(File_information5[:Real_C1],2)
-                                                File_information5=File_information5[Real_C1:]                                                   
-                                                
-                                                if len(File_information5)==0:
-                                                    print("Wrong file!")
-                                                    raise SystemExit                                                    
-                                                Real_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
-                                                Real_C1=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                N10=int(File_information5[:Real_C1],2)
-                                                File_information5=File_information5[Real_C1:]                                                   
-                                                #print(N10)
-                                                
-
-                                            
-                                                
-                                                lenf6=len(File_information5)
-                                                Reality2=0
-                                                
-                    
-                                                if T14==0:
-                                                    T14=1
-                                                
-                                                if Divided_corrdiates==0:
-                                                    Divided_corrdiates=1
-                                                
-                                                
-                                                
-                                            
-
-                                                #print(T14)
-                                        
-                                                #print(Reality)
+                                                #print(File_information5)
                                               
-
-
-                                                #print(Reality)
-                                        
+                                                #print(Extract_info)
                                                 
-                                        if   File_information6_times2>0:
-                                        	Translate_info_Decimal_2=0
+                                               
+                                                Real_C=int(File_information5[0:6],2)
+                                                File_information5=File_information5[6:]
+                                                Real_C1=int(File_information5[:Real_C],2)
+                                                File_information5=File_information5[Real_C:]
+                                                XR=int(File_information5[:Real_C1],2)
+                                                File_information5=File_information5[Real_C1:]
+                                                Real_C=int(File_information5[0:6],2)
+                                                File_information5=File_information5[6:]
+                                                Real_C1=int(File_information5[:Real_C],2)
+                                                File_information5=File_information5[Real_C:]
+                                                Extract_info=int(File_information5[:Real_C1],2)
+                                                File_information5=File_information5[Real_C1:]                                                     
+                                                      
+                                                #08122#17#18
+                                    
+                                    k1=-2
+                                    k2=-1
+                                    X1=1
+                                   
+                                    
+                                   
+                                    
+ 
+                                    
+                                    Extract1=0
+                                    Times_10=1
+                                  
+                                    Times_11=-1
+                                    Times_12=1
+                                    University=-1
+                                    
+                                    Divided_corrdiates=1  
+                                    counts=-1
+                                    N_5=-1
+                                    Times_7=0
+
+                                    while Extract1!=1:
+                                        
+                                        
+
+                                           
+                                            
+                                            
+                                            k1+=1
+                                            k2+=1
+                                            
+                                           
+                                        
+                                           
+                                           
+                                            
+                                            
+                                            #N_5+=1
+                                            #Times_11+=1
+                                    
+                                            
+                                            
+                                            University=int(k2)
+                                            X2=X1
+                                            C11="0"+str(((8*X2)+40))+"b"
+                                            
+                                            if University>(2**((8*X1)+40)-1):
+                                                    University=0
+                                                    k1=-1
+                                                    k2=0
+                                                    counts=-1
+                                                    
+                                                    X1+=1                                          
+                                            	
+                                            if X1>44739242:
+                                                University=0
+                                                X1=1
+                                                X2=1
+                                            
+                                            University_file=format(University,C11)
+                                           
+                                            
+
+                                                
+                                            
+                                            Divided_corrdiates=int(University_file[0:(X2*8)],2)
+                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
+                                            Times_10=int(University_file[(X2*8)+8:(X2*8)+16],2)
+                                            Times_11=int(University_file[(X2*8)+16:(X2*8)+24],2)
+                                            N_5=int(University_file[(X2*8)+24:(X2*8)+32],2)
+                                            Times_7=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            counts+=1
+                                            #print(counts)
+                                            if N_5>=68719476736:
+                                                N_5=0
+                                            elif Times_12>=2**26 and Times_10>=2**26 and N_5>=2**26 and Times_7>=2**26:
+                                                Times_12=1
+                                                Times_10=1
+                                                N_5=0
+                                                Times_7=0
+                                                N_5=0
+
+                                           
+                                            
+                                            
+                                            
+                                            
+                                            
+                                             
+
+                                            
+                                            if Divided_corrdiates==0:
+                                            	Divided_corrdiates=1
+                                            if Times_12==0:
+                                                Times_12=1 
+                                            
+                                            if Times_10==0:
+                                                Times_10=1 
+                                           
+                                            
+        
+                                             
+                                            
+                                             
+                                                                                    
+                                            
+                                            
+                                           
+                            
+                                           
+                                            
+                                          
+                                          
+                                           
                                        
-                                      
-                                        	
-                                        	
-                                        
-                                        	
+                                            
+ 
+                                            
+                                            File_information52=""
+                                            File_information53=""
+                                            File_information54=""
+                                            Add_N=""
     
-                                        if C==1 and T14!=0:
-                                                File_information5=File_information5
-                                                lenf6=len(File_information5)
+                                           
+                                            File_information52=format(N_5,'024b')
+                                            File_information53=format(Times_10,'024b')
+                                            
+                                            
+
+                                            Add_N=format(Times_11,'024b')
+                                            if   File_information6_times2==0:
+                                                File_information54=format(Times_7,'040b')
+                                                File_information5_2=File_information54
                                                 
+                 
 
-
-                                        if len (File_information5)!=0:
+                                            
+                                            File_information54=File_information5_2
+ 
+                                           
+                                             
+                                            
+                                           
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            #print(B)
+                                               
+                                           
+                                            
+                                            File_information53=format(Times_10,'024b')                                            
+                                            
+                                                                                   
+                                            
+                                                                                         
+                                                
+                                            File_information5_2=File_information54
+    
+                                            
+                                            File_information5_17=""
+                                      
+                                            
+                                            
+                                            lenf6=len(File_information54)
+    
+    
+                                            add_bits=""
+    
+                                            Times_6=""
+    
+                                            #Extract
+    
+                                            INFO10=""
+                                            Translate_info_Decimal=""
+                                          
+                                           
+                                            Times_6=""
+                                        
+                                            Number_of_the_file=0
+                                          
+    
+                                            C=1
+                                         
+                                            if C==1:
+                                                if   File_information6_times2==0:
+    
+                                                         
+    
+                                                        
+    
+                                                        
+                                                        
+                                                        
+                                                        lenf6=len(File_information54)
+    
+                                                        INFO10=File_information52
+                                                        Deep5 = int(INFO10, 2)
+                                                       
+                                                      
+                                                        
+                                                        lenf6=len(File_information54)
+                                                        File_information54=File_information5_2
+                                                        
+                                                      
+                                                        
+                                                        Times_6=File_information53
+                                                        Add_N=Add_N
+                                                        
+                                                        T = int(Times_6, 2)
+                                                        Add= int(Add_N, 2)
+                                                        lenf6=len(File_information54)
+                                                        #print("Deep: ")
+                                                        #print(Deep7-25)
+                                                        Times_half_Real=0
+                                                if   File_information6_times2>0:
+                                                        Translate_info_Decimal_2=0
+                                                        
+                                                
+                                                        
+            
+                                                if C==1 and Times_12!=0:
+                                                        File_information54=File_information54
+                                                        lenf6=len(File_information54)
+                                                       
+                                                        
+                                                       
+                                                        if len (File_information54)!=0:
                         
                                                                                                     
-                                                    Number_of_the_file=int(File_information5,2)
-                                                    #print(Number_of_the_file)
+                                                            Number_of_the_file=int(File_information54, 2)
+                                                                                                     
 
-                                        else:
-                                                     Number_of_the_file=N10
-                                                 
-                                                     
-                                        if Reality2<Reality:
+                                                        else:
+                                                            Number_of_the_file=0
+                                          
                                                         Hole_Number_information=(2**Deep5)-1
                                                         add_ones_together=Hole_Number_information
-                                                        Reality2+=1
-                                                        if T_Real==0:
-                                                            T_Real=1                                                        
-                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Add)//3)*T_Real)//Divided_corrdiates
+                                                
+                                                
+                                                                                         
+                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Times_11)//3)*Times_10)//Divided_corrdiates
 
-                                                 
-                                                        #print(Number_of_the_file)
-                                             
-                                    #####################################################################################################################################################
-                                   
-                                    
-                                    
-                                    
-                                    File_information5_17=bin(Number_of_the_file)[2:]
-                                     
-                                    File_information5_2=File_information5_17
-                                   
-
-                                    if i==2:
-
-                                        Make_togher=""
-                                        Make_togher=Times_6
-                                        Number_add_plus_one=""
-                                        add_bits=""
-                                        if C==1 and T14!=0:
-                                                File_information6_times2=File_information6_times2+1
-
-                                        lenf9=len(File_information5_17)
-                                        #print(File_information6_times2)
-                                        
-                                        
-                                          
+                                                        
+                                                        
+                                                        
+                                                        Times_half_Real+=1
+                                                        
+                                                        
+                                                        
+                                                
                                         
                                                 
-                                        if  File_information6_times2==T14:
-                                        	   
-                                            if C==1 and T14==0:
-                                            	File_information5_17=File_information5
-                                            	lenf=len(File_information5_17)
-                                            	add_bits=""
-                                            	count_bits=long-lenf%long
-                                            	z=0
-                                            	if count_bits!=0:
-                                            	        if count_bits!=long:
-                                            	            while z<count_bits:
-                                            	            	add_bits="0"+add_bits
-                                            	            	z=z+1
-                                            	File_information5_17=add_bits+File_information5_17
+                                                                                  
+                                                
+                                                
+                                                        
+                                               
 
-
-                                            	
-                                            	lenf=len(File_information5_17)
-                                            	add_bits=""
-                                            	count_bits=8-lenf%8
-                                            	z=0
-                                            	if count_bits!=0:
-                                            	        if count_bits!=8:
-                                            	            while z<count_bits:
-                                            	            	add_bits="0"+add_bits
-                                            	            	z=z+1
-                                            	File_information5_17=add_bits+File_information5_17
-                                            	
+                                              
+                                            #####################################################################################################################################################
+                                           
                                             
-                                     
-                                            if C==1 and T14!=0:
- 
-                                            	File_information5_17=bin(Number_of_the_file)[2:]
-                                            	lenf14=len(File_information5_17)
-                                            	lenf=len(File_information5_17)
-                                            	add_bits=""
-                                            	count_bits=long-lenf%long
-                                            	z=0
-                                            	if count_bits!=0:
-                                            	        if count_bits!=long:
-                                            	            while z<count_bits:
-                                            	            	add_bits="0"+add_bits
-                                            	            	z=z+1
-                                            	File_information5_17=add_bits+File_information5_17
+                                            
+                                            
+                                            File_information5_17=bin(Number_of_the_file)[2:]
+                                             
+                                            File_information5_2=File_information5_17
+                                            #print(File_information5_17)
+                                           
+    
+                                            if i==2:
+                                                Make_togher=""
+                                                Make_togher=Times_6
+                                                
+                                                add_bits=""
+                                                if C==1 and Times_12!=0:
+                                                        File_information6_times2=File_information6_times2+1
+    
+                                                lenf9=len(File_information5_17)
+                                                #print(File_information6_times2)
+                                                
+                                                
+                                                if  File_information6_times2==Times_12:
+                                                        File_information6_times2_1=File_information6_times2
+                                                        File_information6_times2=0
+                                                        if int(INFO,2)==Number_of_the_file:  
 
-                                            	
-                                            	lenf=len(File_information5_17)
-                                            	add_bits=""
-                                            	count_bits=8-lenf%8
-                                            	z=0
-                                            	if count_bits!=0:
-                                            	        if count_bits!=8:
-                                            	            while z<count_bits:
-                                            	            	add_bits="0"+add_bits
-                                            	            	z=z+1
-                                            	File_information5_17=add_bits+File_information5_17
-                                            	        
-                                            	#print(lenf14)
 
-                                            		
-                                            	
-                                            	
+                                                               if C==1:
+
+                                                                       File_information5_17=bin(Number_of_the_file)[2:]
+                                                                       lenf14=len(File_information5_17)
+
+
+
+                                                                       lenf=len(File_information5_17)
+                                                                       add_bits=""
+                                                                       count_bits=8-lenf%8
+                                                                       z=0
+                                                                       if count_bits!=0:
+                                                                               if count_bits!=8:
+                                                                                   while z<count_bits:
+                                                                                       add_bits="0"+add_bits
+                                                                                       z=z+1
+
+
+                                                                       File_information5_17=add_bits+File_information5_17
+                                                                #print(File_information5_17)
+                                                if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR:
+                                                       lenf=len(File_information5_17)
+
+
+
+
+
+
+
+
+
+
+                                                 
+                                                    
+                                                       
+
+
+
+
+
+                                                       if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR:
+
+
+                                                               File_information5_17=bin(Number_of_the_file)[3:]
+
+                                                               Extract1=1
+                                                    
+                                                 
+                                    if Extract1==1:                
                                             L=len(File_information5_17)
-                                         
                                             n = int(File_information5_17, 2)
-                                            #############binary to data
                                             width_bits=len(File_information5_17)
                                             width_bits=(width_bits//8)*2
                                             width_bits=str(width_bits)
                                             width_bits="%0"+width_bits+"x"
                                             width_bits3=binascii.unhexlify(width_bits % n)
-                                            ####
                                             width_bits2=len(width_bits3)
-
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
-                                             
-                                            with open(nameas, "wb") as f2:
                                             
-                                              
-                                            	f2.write(width_bits3)
+                                  
+                                                            
+                                            with open(nameas, "wb") as f2:
 
+                                                
+                                                f2.write(width_bits3)
+                                                    
+                                            
                                             x2 = time()
                                             x3=x2-x
                                             xs=float(x3)
