@@ -39,16 +39,6 @@ class compression:
 
                     if os.path.exists(name):
                             print('Path is exists!')
-                           
-                           
-                            
-                           
-                              
-                            if name=="f":
-                                gh="f"
-                                ge="f1"
-                                os.rename(gh,ge)
-                                name="f1"
                     else:
                             print('Path is not exists!')
                             raise SystemExit
@@ -99,22 +89,30 @@ class compression:
                     if i==2:
 
                           
-                        if nameas[nac-4:nac]==".bin":
+                        if nameas[nac-5:nac]=="f.bin":
+                                print("Sorry, wrong file name!")
+                                raise SystemExit        
+                        elif nameas[nac-4:nac]==".bin":
                    
                         	nameas=name[:nac-4]
                         	nac=len(nameas)
                         	
                         	C=1
-
+                        	
+                     
+              
+                                
                         elif nameas[nac-4:nac]!=".bin":
                                 print("Sorry, this is not binary file!")
                                 raise SystemExit
+         
+                           
                                 
                         
                                             
                     if i==1:
                         
-                        nameas=name+".bin"
+                        nameas=name+"spring.bin"
                     
                     	
                     nac=len(nameas)
