@@ -90,10 +90,12 @@ class compression:
 
                         
                           
-                    
+                        if nameas=="spring":
+                                print("Sorry, this is not spring file!")
+                                raise SystemExit                    
                                                            
                       
-                        if nameas[nac-6:nac]=="spring":
+                        elif nameas[nac-6:nac]=="spring":
                            
                             
                           
@@ -107,7 +109,7 @@ class compression:
               
                                 
                         elif nameas[nac-6:nac]!="spring":
-                                print("Sorry, this is not binary file!")
+                                print("Sorry, this is not spring file!")
                                 raise SystemExit
          
                            
