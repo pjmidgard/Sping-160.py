@@ -88,7 +88,7 @@ class compression:
 
                     if i==2:
 
-                        if nameas=="f." or nameas="s.bin":
+                        if nameas=="f." or nameas=="s.bin":
                                 print("Sorry, wrong file name!")
                                 raise SystemExit                               
                       
