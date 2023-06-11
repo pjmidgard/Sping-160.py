@@ -84,11 +84,19 @@ class compression:
                 
                       
                             
-     
+                    if i==1:
+                        if name[0:1]=="f" or name[0:1]=="s" or name[0:1]=="e":
+                            print("wrong name file!")
+                            raise SystemExit     
 
                     if i==2:
+                        if name[0:1]=="f" or name[0:1]=="s":
+                            print("wrong name file!")
+                            raise SystemExit
+                            
                         import random
                         nameas=str(random.randint(1, 9999999999999999999))
+                        
                         
                     
                          
@@ -604,14 +612,36 @@ class compression:
                                                        T2=len(Time_Real1)
                                                        Time_Real4=format(T2,'06b')
                                                        Counts=Time_Real4+Time_Real1+Time_Real3
-                                                       
+                                                       test_str =name
+                                                       hex_str = binascii.hexlify(test_str.encode())
+                                                       bin_str = bin(int(hex_str, 16))[2:].zfill(8 * ((len(hex_str) + 1) // 2))
+                                                       res = bin_str                                                    
 
+                                                       C5=len(C1)
+                                                       C2=C5//8
+                                                       C4=C5%8
+                                                       if C4!=0:
+                                                           C3=(C2+1)*8
+                                                       else:
+                                                           C3=C2*8
+                                                       C="0"+str(C3)+"b"
 
+                                                      
+                                                       Time_Real3=format(counts,C)
+                                                       T1=len(Time_Real3)
+                                                   
+                                                       Time_Real1=bin(T1)[2:]
+                                                       T2=len(Time_Real1)
+                                                       Time_Real4=format(T2,'06b')
+                                                       Counts2=Time_Real4+Time_Real1+Time_Real3
 
 
 
 
                                                        if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
+
+                                                           
+                                                           
 
 
                                                                File_information5_17="1"+XN+Counts+long_file
@@ -626,6 +656,7 @@ class compression:
                                                                                z=z+1
 
                                                                File_information5_17=add_bits+File_information5_17
+                                                               
                                                                
                                                                Extract1=1
                                                       
@@ -645,6 +676,7 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
+                                            nameas=name
                                             
                                   
                                                             
@@ -1078,6 +1110,7 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
+                                            nameas=name
                                            
                                              
                                             
