@@ -87,10 +87,12 @@ class compression:
      
 
                     if i==2:
-                        if  nameas!="spring.spring":
+                        import random
+                        nameas=str(random.randint(1, 9999999999999999999))
+                        
                     
-                            print("This not spring file!")
-                            raise SystemExit 
+                         
+                       
                         C=1
 
 
@@ -101,7 +103,8 @@ class compression:
                                             
                     if i==1:
                         
-                        nameas="spring.spring"
+                        import random
+                        nameas=str(random.randint(1, 9999999999999999999))
                     
                     	
                     nac=len(nameas)
@@ -1096,4 +1099,4 @@ class compression:
 d=compression()
 
 xw1=d.cryptograpy_compression4()
-print(xw1)#
+print(xw1)
