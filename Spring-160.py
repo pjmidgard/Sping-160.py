@@ -87,7 +87,8 @@ class compression:
      
 
                     if i==2:
-                        if nameas!=".spring":
+                        if  nameas="spring.spring"
+                    
                             print("This not spring file!")
                             raise SystemExit 
                         C=1
@@ -100,7 +101,7 @@ class compression:
                                             
                     if i==1:
                         
-                        nameas=".spring"
+                        nameas="spring.spring"
                     
                     	
                     nac=len(nameas)
