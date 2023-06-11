@@ -90,7 +90,7 @@ class compression:
                             raise SystemExit     
 
                     if i==2:
-                        if name[0:1]=="f" or name[0:1]=="s":
+                        if name[0:1]=="f" or name[0:1]=="s" or name[0:1]=="e":
                             print("wrong name file!")
                             raise SystemExit
                             
