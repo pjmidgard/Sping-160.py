@@ -142,10 +142,7 @@ class compression:
                                        
                     
 
-                    with open(nameas, "w") as f4:
-                            f4.write(s)
-                    with open(nameas, "a") as f3:
-                            f3.write(s)
+ 
                     with open(name, "rb") as binary_file:
 
                        # Read the whole file at once
@@ -1092,6 +1089,8 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
+                                            if nameas[0:1]=="s":
+                                                nameas=nameas[1:]
                                             
                                   
                                                             
