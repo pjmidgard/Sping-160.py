@@ -88,16 +88,17 @@ class compression:
 
                     if i==2:
 
-                        if nameas=="f." or nameas=="s.bin":
-                                print("Sorry, wrong file name!")
-                                raise SystemExit                               
+                        
+                          
+                    
+                                                           
                       
-                        elif nameas[nac-4:nac]==".bin":
+                        if nameas[nac-6:nac]=="spring":
                            
                             
                           
                    
-                        	nameas=name[:nac-4]
+                        	nameas=name[:nac-6]
                         	nac=len(nameas)
                         	
                         	C=1
@@ -105,7 +106,7 @@ class compression:
                      
               
                                 
-                        elif nameas[nac-4:nac]!=".bin":
+                        elif nameas[nac-6:nac]!="spring":
                                 print("Sorry, this is not binary file!")
                                 raise SystemExit
          
@@ -115,7 +116,7 @@ class compression:
                                             
                     if i==1:
                         
-                        nameas="s"+name+".bin"
+                        nameas=name+"spring"
                     
                     	
                     nac=len(nameas)
@@ -1089,8 +1090,8 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
-                                            if nameas[0:1]=="s":
-                                                nameas=nameas[1:]
+                                           
+                                             
                                             
                                   
                                                             
@@ -1110,4 +1111,4 @@ class compression:
 d=compression()
 
 xw1=d.cryptograpy_compression4()
-print(xw1)
+print(xw1)#
