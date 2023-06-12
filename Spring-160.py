@@ -36,8 +36,8 @@ class compression:
                     Corrupted=0
                       
                     name = input("What is name of file?")
-                    if i==2:
-                        names =input("What is name of file the name?")
+                   
+                       
                  
 
                     if os.path.exists(name):
@@ -107,8 +107,7 @@ class compression:
                         
                         import random
                         nameas=str(random.randint(1, 9999999999999999999))
-                        import random
-                        nameass=str(random.randint(1, 9999999999999999999)) 
+
                     
                     	
                     nac=len(nameas)
@@ -132,13 +131,10 @@ class compression:
                         
 
                     
-                                       
+                         
                     
-                    if i==2:
-                        with open(names, "r") as b:
+                    
 
-                       # Read the whole file at once
-                            datat = b.read()
                          
                     with open(name, "rb") as binary_file:
 
@@ -653,12 +649,18 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
+                                            name=name+"/"
+
                                    
-                                            with open(nameass, "w") as f6:
+                                            with open(nameas, "w") as f6:
                                                 f6.write(name)
-                                                                                      
+
+                                                
+                                                
+                                                    
+                                                                                   
                                                             
-                                            with open(nameas, "wb") as f2:
+                                            with open(nameas, "ab") as f2:
 
                                                 
                                                 f2.write(width_bits3)
@@ -707,11 +709,32 @@ class compression:
                                         if   File_information6_times2==0:
                                 
                                                 lenf6=len(File_information5)
+                                                File_information6=""
+                                                ascii_string = ""
+                                                while File_information5[:8]!="00101111":
+                                                    a_binary_string=File_information5[:8]
+                                                    binary_values = a_binary_string. split()
+                                                    
+                                                    for binary_value in binary_values:
+                                                        an_integer = int(binary_value, 2)
+                                                    ascii_character = str(chr(an_integer))
+                                                    ascii_string += ascii_character
+                                                    File_information5=File_information5[8:]
+                                                    
+                                                    
+
+                                                   
+                                                
+                                             
+                                                File_information5=File_information5[8:]
+                                                             
+                                                
                                                 while File_information5[:1]!="1":
                                                     if File_information5[:1]=="0":
                                                         File_information5=File_information5[1:]
                                                         
                                                 File_information5=File_information5[1:]
+                                                
                                                 #print(File_information5)
                                               
                                                 #print(Extract_info)
@@ -1088,13 +1111,14 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
-                                            nameas=datat
+                                          
+                    
                                            
                                              
                                             
                                   
                                                             
-                                            with open(nameas, "wb") as f2:
+                                            with open(ascii_string, "wb") as f2:
 
                                                 
                                                 f2.write(width_bits3)
