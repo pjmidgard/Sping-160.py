@@ -83,20 +83,15 @@ class compression:
                     
                 
                       
-                            
-                    if i==1:
-                        if name[0:1]=="f" or name[0:1]=="s" or name[0:1]=="e":
-                            print("wrong name file!")
-                            raise SystemExit     
+     
 
                     if i==2:
-                        if name[0:1]=="f" or name[0:1]=="s" or name[0:1]=="e":
-                            print("wrong name file!")
+                        if name[0:1]!="t":
+                            print("Wrong name of file!")
                             raise SystemExit
-                            
-                        import random
-                        nameas=str(random.randint(1, 9999999999999999999))
                         
+                            
+
                         
                     
                          
@@ -110,9 +105,9 @@ class compression:
                         
                                             
                     if i==1:
+                        nameas="t"+name
                         
-                        import random
-                        nameas=str(random.randint(1, 9999999999999999999))
+
                     
                     	
                     nac=len(nameas)
@@ -676,7 +671,7 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
-                                            nameas=name
+                                        
                                             
                                   
                                                             
@@ -1110,7 +1105,8 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
-                                            nameas=name
+                                            nameas=name[1:]
+                                            
                                            
                                              
                                             
