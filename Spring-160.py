@@ -135,6 +135,19 @@ class compression:
                     
 
                     long_name=len(name)
+                   
+                    if i==2:
+                        userInput = 0
+                        while True:
+                          try:
+                             userInput = int(name)   
+                          except ValueError:
+                             print("Not an integer!")
+                             continue
+                          else:
+                             print("Yes an integer!")
+                             break
+                            
                     with open(name, "rb") as binary_file:
 
                        # Read the whole file at once
