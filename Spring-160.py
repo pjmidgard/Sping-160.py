@@ -766,7 +766,7 @@ class compression:
                                                 else:
                                                     M=M[:10]
                                                 if M!=str(name):
-                                                    print("This is wrong of file!")
+                                                    print("This is wrong name of file!")
                                                     raise SystemExit 
                                                 
                                                 File_information5=File_information5[Real_C1:]
