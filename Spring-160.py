@@ -709,7 +709,7 @@ class compression:
                                         if   File_information6_times2==0:
                                 
                                                 lenf6=len(File_information5)
-                                                File_information6=""
+                                                
                                                 ascii_string = ""
                                                 while File_information5[:8]!="00101111":
                                                     a_binary_string=File_information5[:8]
