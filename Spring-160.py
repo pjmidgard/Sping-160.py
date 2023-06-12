@@ -35,7 +35,10 @@ class compression:
                     Times_6=""
                     Corrupted=0
                       
-                    name = input("What is name of file? ")
+                    name = input("What is name of file?")
+                    if i==2:
+                        names =input("What is name of file the name?")
+                 
 
                     if os.path.exists(name):
                             print('Path is exists!')
@@ -87,10 +90,9 @@ class compression:
      
 
                     if i==2:
-                        import random
-                        nameas=str(random.randint(1, 9999999999999999999))
+
                         
-                    
+               
                          
                        
                         C=1
@@ -105,6 +107,8 @@ class compression:
                         
                         import random
                         nameas=str(random.randint(1, 9999999999999999999))
+                        import random
+                        nameass=str(random.randint(1, 9999999999999999999)) 
                     
                     	
                     nac=len(nameas)
@@ -130,8 +134,12 @@ class compression:
                     
                                        
                     
+                    if i==2:
+                        with open(names, "r") as b:
 
- 
+                       # Read the whole file at once
+                            datat = b.read()
+                         
                     with open(name, "rb") as binary_file:
 
                        # Read the whole file at once
@@ -645,8 +653,10 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
-                                            
-                                  
+                                   
+                                            with open(nameass, "w") as f6:
+                                                f6.write(name)
+                                                                                      
                                                             
                                             with open(nameas, "wb") as f2:
 
@@ -1078,6 +1088,7 @@ class compression:
                                             add_bitszzza=""
                                             add_bitszs=""
                                             File_information5_2=Times_6
+                                            nameas=datat
                                            
                                              
                                             
