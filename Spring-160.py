@@ -103,10 +103,9 @@ class compression:
                                 
                         
                                             
-                    if i==1:
+                    
                         
-                        import random
-                        nameas=str(random.randint(1, 9999999999999999999))
+                      
 
                     
                     	
@@ -135,7 +134,7 @@ class compression:
                     
                     
 
-                         
+                    long_name=len(name)
                     with open(name, "rb") as binary_file:
 
                        # Read the whole file at once
@@ -650,9 +649,16 @@ class compression:
                                             add_bitszs=""
                                             File_information5_2=Times_6
                                             name=name+"/"
+                                            nameas=str(counts)
+                                            ML=len(nameas)
+                                            if ML<10:
+                                                M=str(nameas[:ML])
+                                            else:
+                                                M=nameas[:10]
 
                                    
                                             with open(nameas, "w") as f6:
+                                                
                                                 f6.write(name)
 
                                                 
@@ -710,6 +716,7 @@ class compression:
                                 
                                                 lenf6=len(File_information5)
                                                 
+                                  
                                                 ascii_string = ""
                                                 while File_information5[:8]!="00101111":
                                                     a_binary_string=File_information5[:8]
@@ -745,12 +752,23 @@ class compression:
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
                                                 XR=int(File_information5[:Real_C1],2)
+
                                                 File_information5=File_information5[Real_C1:]
                                                 Real_C=int(File_information5[0:6],2)
                                                 File_information5=File_information5[6:]
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
                                                 Extract_info=int(File_information5[:Real_C1],2)
+                                                M=str(Extract_info)
+                                                ML=len(nameas)
+                                                if ML<10:
+                                                    M=M[:ML]
+                                                else:
+                                                    M=M[:10]
+                                                if M!=str(name):
+                                                    print("This is wrong of file!")
+                                                    raise SystemExit 
+                                                
                                                 File_information5=File_information5[Real_C1:]
                                                 Real_C=int(File_information5[0:6],2)
                                                 File_information5=File_information5[6:]
