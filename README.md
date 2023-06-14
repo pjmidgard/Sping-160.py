@@ -1,4 +1,4 @@
-# Sping-160.py
+# Spring-160.py
 Spring-160 compression software made by Jurijus Pacalovas.
 
 Spring 160 Algorithm:
