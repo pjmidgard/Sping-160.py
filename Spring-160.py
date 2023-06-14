@@ -540,23 +540,7 @@ class compression:
 
                                                                if C==1:
 
-                                                                       File_information5_17=bin(Number_of_the_file)[2:]
-                                                                       lenf14=len(File_information5_17)
-
-
-
-                                                                       lenf=len(File_information5_17)
-                                                                       add_bits=""
-                                                                       count_bits=8-lenf%8
-                                                                       z=0
-                                                                       if count_bits!=0:
-                                                                               if count_bits!=8:
-                                                                                   while z<count_bits:
-                                                                                       add_bits="0"+add_bits
-                                                                                       z=z+1
-
-
-                                                                       File_information5_17=add_bits+File_information5_17
+                                                                       C=1
                                                                 #print(File_information5_17)
                                                 if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
                                                        lenf=len(File_information5_17)
@@ -1081,23 +1065,7 @@ class compression:
 
                                                                if C==1:
 
-                                                                       File_information5_17=bin(Number_of_the_file)[2:]
-                                                                       lenf14=len(File_information5_17)
-
-
-
-                                                                       lenf=len(File_information5_17)
-                                                                       add_bits=""
-                                                                       count_bits=8-lenf%8
-                                                                       z=0
-                                                                       if count_bits!=0:
-                                                                               if count_bits!=8:
-                                                                                   while z<count_bits:
-                                                                                       add_bits="0"+add_bits
-                                                                                       z=z+1
-
-
-                                                                       File_information5_17=add_bits+File_information5_17
+                                                                       C=1
                                                                 #print(File_information5_17)
                                                 if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR:
                                                        lenf=len(File_information5_17)
