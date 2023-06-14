@@ -152,6 +152,9 @@ class compression:
 
                        # Read the whole file at once
                         data = binary_file.read()
+                        if i==2:
+                                import paq
+                                data=paq.decompress(data)
 
                         
                      
@@ -685,9 +688,23 @@ class compression:
                                                                                    
                                                             
                                             with open(nameas, "ab") as f2:
-
+                                                
+                                                
+                                                
                                                 
                                                 f2.write(width_bits3)
+
+                                            with open(nameas, "rb") as binary_file:
+
+                                               # Read the whole file at once
+                                                data_save = binary_file.read()
+                                                    
+                                            with open(nameas, "wb") as f1:
+                                                import paq
+                                                data_save=paq.compress(data_save)
+                                                #print(data_save)
+                                                f1.write(data_save)
+                                                
                                                     
                                             
                                             x2 = time()
@@ -1152,7 +1169,6 @@ class compression:
 
                                                 
                                                 f2.write(width_bits3)
-                                                    
                                             
                                             x2 = time()
                                             x3=x2-x
