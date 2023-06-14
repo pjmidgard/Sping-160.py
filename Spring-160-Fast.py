@@ -315,12 +315,9 @@ class compression:
 
                                                 
                                             
-                                            Divided_corrdiates=int(University_file[0:(X2*8)],2)
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Times_10=int(University_file[(X2*8)+8:(X2*8)+16],2)
-                                            Times_11=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            N_5=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Times_7=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            
+                                            Times_7=int(University_file[(X2*8):(X2*8)+40],2)
+                                            Times_12=10
                                             counts+=1
                                             if N_5>=68719476736:
                                                 N_5=0
@@ -491,7 +488,9 @@ class compression:
                                                 
                                                 
                                                                                          
-                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Times_11)//3)*Times_10)//Divided_corrdiates
+                                                        Number_of_the_file=Times_7                           
+                                                        Number_of_the_file=2**Number_of_the_file*Times_7
+                                                        #rint(Number_of_the_file)
 
                                                         
                                                         
@@ -885,12 +884,8 @@ class compression:
 
                                                 
                                             
-                                            Divided_corrdiates=int(University_file[0:(X2*8)],2)
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Times_10=int(University_file[(X2*8)+8:(X2*8)+16],2)
-                                            Times_11=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            N_5=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Times_7=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            Times_7=int(University_file[(X2*8):(X2*8)+40],2)
+                                            Times_12=10
                                             counts+=1
                                             #print(counts)
                                             if N_5>=68719476736:
@@ -1059,10 +1054,9 @@ class compression:
                                           
                                                         Hole_Number_information=(2**Deep5)-1
                                                         add_ones_together=Hole_Number_information
-                                                
-                                                
-                                                                                         
-                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Times_11)//3)*Times_10)//Divided_corrdiates
+                                                        
+                                                        Number_of_the_file=Times_7                           
+                                                        Number_of_the_file=2**Number_of_the_file*Times_7
                                                         
                                                         
                                                         
