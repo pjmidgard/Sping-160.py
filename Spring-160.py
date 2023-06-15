@@ -1088,7 +1088,8 @@ class compression:
 
                                                                        C=1
                                                                 #print(File_information5_17)
-                                                if Extract_info==counts and File_information6_times2_1==Times_12:
+                                                if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR: 
+             
                                                        lenf=len(File_information5_17)
 
 
@@ -1108,7 +1109,7 @@ class compression:
 
 
 
-                                                       if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR and X3==XN1:
+                                                       if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR: 
              
 
 
