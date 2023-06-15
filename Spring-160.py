@@ -250,7 +250,7 @@ class compression:
                                     
                                     k1=-2
                                     k2=-1
-                                    X1=4
+                                    X1=3
                                   
                                     
                                     
@@ -313,8 +313,8 @@ class compression:
                                             	
                                             if X1>44739246:
                                                 University=0
-                                                X1=4
-                                                X2=4
+                                                X1=3
+                                                X2=3
                                             
                                             
                                             University_file=format(University,C11)
@@ -788,7 +788,7 @@ class compression:
                                     
                                     k1=-2
                                     k2=-1
-                                    X1=4
+                                    X1=3
                                    
                                    
                                     
@@ -850,8 +850,8 @@ class compression:
                                             	
                                             if X1>44739246:
                                                 University=0
-                                                X1=4
-                                                X2=4
+                                                X1=3
+                                                X2=3
                                             
                                             University_file=format(University,C11)
                                            
