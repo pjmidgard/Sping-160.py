@@ -143,7 +143,7 @@ class compression:
                              userInput = int(name)   
                           except ValueError:
                              print("Not an integer!")
-                             continue
+                             raise SystemExit
                           else:
                              print("Yes an integer!")
                              break
