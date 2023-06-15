@@ -306,7 +306,7 @@ class compression:
                                                     if University>(2**((8*X2)+40)-1) and (2**((8*(((X2-1)//(X2-2))))+40)-1):
                                                         
                                                         counts=-1
-                                                        #Imagenary data
+                                                        #Imaginary data
                                                       
                                                         
                                                     
