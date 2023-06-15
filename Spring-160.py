@@ -303,8 +303,7 @@ class compression:
                                                     k2=0
                                                     X1+=1  
                                                     
-                                                    if University>(2**((8*X2)+40)-1) and (2**((8*(((X2-1)//(X2-2))))+40)-1):
-                                                        
+                                                    if University>(2**((8*X2)+40)-1) and (2**((8*(X2-1)+40)-1)):
                                                         counts=-1
                                                         #Imaginary data
                                                       
@@ -841,7 +840,7 @@ class compression:
                                                     k2=0
                                                     X1+=1  
                                                     
-                                                    if University>(2**((8*X2)+40)-1) and (2**((8*(((X2-1)//(X2-2))))+40)-1):
+                                                    if University>(2**((8*X2)+40)-1) and (2**((8*(X2-1)+40)-1)):
                                                         
                                                         counts=-1
                                                       
