@@ -302,7 +302,7 @@ class compression:
                                                     k2=0
                                                     X1+=1  
                                                     
-                                                    if University>(2**((8*X1)+40)-1) and (2**((8*(((X1-1)//(X1-1))))+40)-1):
+                                                    if University>(2**((8*X1)+40)-1) and (2**((8*(((X1-1)//(X1-2))))+40)-1):
                                                         
                                                         counts-=1
                                                         
@@ -838,7 +838,7 @@ class compression:
                                                     k2=0
                                                     X1+=1  
                                                     
-                                                    if University>(2**((8*X1)+40)-1) and (2**((8*(((X1-1)//(X1-1))))+40)-1):
+                                                    if University>(2**((8*X1)+40)-1) and (2**((8*(((X1-1)//(X1-2))))+40)-1):
                                                         
                                                         counts-=1
                                                         
