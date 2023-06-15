@@ -251,7 +251,7 @@ class compression:
                                     k1=-2
                                     k2=-1
                                     X1=4
-                                    X3=0
+                                  
                                     
                                     
                                    
@@ -306,7 +306,7 @@ class compression:
                                                     if University>(2**((8*X2)+40)-1) and (2**((8*(((X2-1)//(X2-2))))+40)-1):
                                                         
                                                         counts=-1
-                                                        X3+=1
+                                                      
                                                         
                                                     
                                                                                                
@@ -617,26 +617,7 @@ class compression:
                                                        Time_Real4=format(T2,'06b')
                                                        Counts=Time_Real4+Time_Real1+Time_Real3
                                                        
-                                                       C1=bin(X3)[2:]
-                                                       C5=len(C1)
-                                                       C2=C5//8
-                                                       C4=C5%8
-                                                       if C4!=0:
-                                                           C3=(C2+1)*8
-                                                       else:
-                                                           C3=C2*8
-                                                       C="0"+str(C3)+"b"
-                                                       
-                                                       
-                                                       Time_Real3=format(X3,C)
-                                                       T1=len(Time_Real3)
-                                                    
-                                                       Time_Real1=bin(T1)[2:]
-                                                       T2=len(Time_Real1)
-                                                       Time_Real4=format(T2,'06b')
-                                                       
 
-                                                       XN1=Time_Real4+Time_Real1+Time_Real3
 
 
 
@@ -645,7 +626,7 @@ class compression:
                                                        if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
 
 
-                                                               File_information5_17="1"+XN+Counts+long_file+XN1
+                                                               File_information5_17="1"+XN+Counts+long_file
                                                                lenf=len(File_information5_17)
                                                                add_bits=""
                                                                count_bits=8-lenf%8
@@ -802,17 +783,13 @@ class compression:
                                                 File_information5=File_information5[6:]
                                                 long=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
-                                                Real_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
-                                                Real_C1=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                XN1=int(File_information5[:Real_C1],2) 
+                                                
                                                                                                #08122#17#18
                                     
                                     k1=-2
                                     k2=-1
                                     X1=4
-                                    X3=0
+                                   
                                    
                                     
                                    
@@ -866,7 +843,7 @@ class compression:
                                                     if University>(2**((8*X2)+40)-1) and (2**((8*(((X2-1)//(X2-2))))+40)-1):
                                                         
                                                         counts=-1
-                                                        X3+=1
+                                                      
                                                         
                                                     
                                                                                                
@@ -1111,7 +1088,7 @@ class compression:
 
                                                                        C=1
                                                                 #print(File_information5_17)
-                                                if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR and X3==XN1:
+                                                if Extract_info==counts and File_information6_times2_1==Times_12:
                                                        lenf=len(File_information5_17)
 
 
