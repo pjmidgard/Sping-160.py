@@ -304,12 +304,12 @@ class compression:
                                                     
                                                     if University>(2**((8*X2)+40)-1) and (2**((8*(((X2-1)//(X2-2))))+40)-1):
                                                         
-                                                        counts-=1
+                                                        counts=-1
                                                         
                                                     
                                                                                                
                                             	
-                                            if X1>44739242:
+                                            if X1>44739246:
                                                 University=0
                                                 X1=4
                                                 X2=4
@@ -840,12 +840,12 @@ class compression:
                                                     
                                                     if University>(2**((8*X2)+40)-1) and (2**((8*(((X2-1)//(X2-2))))+40)-1):
                                                         
-                                                        counts-=1
+                                                        counts=-1
                                                         
                                                     
                                                                                                
                                             	
-                                            if X1>44739242:
+                                            if X1>44739246:
                                                 University=0
                                                 X1=4
                                                 X2=4
