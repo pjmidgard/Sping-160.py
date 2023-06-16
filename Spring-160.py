@@ -250,7 +250,7 @@ class compression:
                                     
                                     k1=-2
                                     k2=-1
-                                    X1=3
+                                    X1=4
                                   
                                     
                                     
@@ -297,24 +297,22 @@ class compression:
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             
-                                            if University>(2**((8*X1)+40)-1):
+                                            if University>(2**((8*((X2-1)//(X2-2))+40)-1)):
                                                     University=0
                                                     k1=-1
                                                     k2=0
                                                     X1+=1  
+                                                    counts=-1
                                                     
-                                                    if University>(2**((8*X2)+40)-1) and (2**((8*(X2-1)+40)-1)):
-                                                        counts=-1
+                                                    
+                                                        
                                                         #Imaginary data
                                                       
                                                         
                                                     
                                                                                                
                                             	
-                                            if X1>44739246:
-                                                University=0
-                                                X1=3
-                                                X2=3
+                                       
                                             
                                             
                                             University_file=format(University,C11)
@@ -788,7 +786,7 @@ class compression:
                                     
                                     k1=-2
                                     k2=-1
-                                    X1=3
+                                    X1=4
                                    
                                    
                                     
@@ -834,24 +832,19 @@ class compression:
                                             X2=X1
                                             C11="0"+str(((8*X2)+40))+"b"
                                             
-                                            if University>(2**((8*X1)+40)-1):
+
+                                                      
+                                            if University>(2**((8*((X2-1)//(X2-2))+40)-1)):
                                                     University=0
                                                     k1=-1
                                                     k2=0
                                                     X1+=1  
-                                                    
-                                                    if University>(2**((8*X2)+40)-1) and (2**((8*(X2-1)+40)-1)):
-                                                        
-                                                        counts=-1
-                                                      
-                                                        
+                                                    counts=-1
+                                                                                                            
                                                     
                                                                                                
                                             	
-                                            if X1>44739246:
-                                                University=0
-                                                X1=3
-                                                X2=3
+
                                             
                                             University_file=format(University,C11)
                                            
