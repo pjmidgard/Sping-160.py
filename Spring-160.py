@@ -575,7 +575,7 @@ class compression:
 
 
                                                        
-                                                       
+                                                       X1-=4
                                                        C1=bin(X1)[2:]
                                                        C5=len(C1)
                                                        C2=C5//8
@@ -759,6 +759,7 @@ class compression:
                                                 Real_C1=int(File_information5[:Real_C],2)
                                                 File_information5=File_information5[Real_C:]
                                                 XR=int(File_information5[:Real_C1],2)
+                                                XR+=4
 
                                                 File_information5=File_information5[Real_C1:]
                                                 Real_C=int(File_information5[0:6],2)
