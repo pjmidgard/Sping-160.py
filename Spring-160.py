@@ -251,6 +251,7 @@ class compression:
                                     k1=-2
                                     k2=-1
                                     X1=4
+                                    X3=1
                                   
                                     
                                     
@@ -295,7 +296,11 @@ class compression:
                                             
                                             University=int(k2)
                                             X2=X1
-                                            C11="0"+str(((8*X2)+40))+"b"
+                                            
+                                            C11="0"+str(((8*X3)+40))+"b"
+                                            if University>(2**((8*((X3-1)+40)-1))):
+                                                X3+=1
+                                                
                                             
                                             if University>(2**((8*((X2-1)//(X2-2))+40)-1)):
                                                     University=0
@@ -321,12 +326,12 @@ class compression:
 
                                                 
                                             
-                                            Divided_corrdiates=int(University_file[0:(X2*8)],2)
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Times_10=int(University_file[(X2*8)+8:(X2*8)+16],2)
-                                            Times_11=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            N_5=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Times_7=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            Divided_corrdiates=int(University_file[0:(X3*8)],2)
+                                            Times_12=int(University_file[(X3*8):(X3*8)+8],2)
+                                            Times_10=int(University_file[(X3*8)+8:(X3*8)+16],2)
+                                            Times_11=int(University_file[(X3*8)+16:(X3*8)+24],2)
+                                            N_5=int(University_file[(X3*8)+24:(X3*8)+32],2)
+                                            Times_7=int(University_file[(X3*8)+32:(X3*8)+40],2)
                                             counts+=1
                                             if N_5>=68719476736:
                                                 N_5=0
@@ -766,8 +771,9 @@ class compression:
                                     k1=-2
                                     k2=-1
                                     X1=4
-                                   
-                                   
+                                    X3=1
+                                  
+                                    
                                     
                                    
                                     
@@ -775,16 +781,16 @@ class compression:
                                     
                                     Extract1=0
                                     Times_10=1
+                                    counts=-1
                                   
                                     Times_11=-1
                                     Times_12=1
                                     University=-1
-                                    
                                     Divided_corrdiates=1  
-                                    counts=-1
+                                    
                                     N_5=-1
                                     Times_7=0
-                                    
+                                
 
                                     while Extract1!=1:
                                         
@@ -807,23 +813,32 @@ class compression:
                                     
                                             
                                             
+                                            
                                             University=int(k2)
                                             X2=X1
-                                            C11="0"+str(((8*X2)+40))+"b"
                                             
-
-                                                      
+                                            C11="0"+str(((8*X3)+40))+"b"
+                                            if University>(2**((8*((X3-1)+40)-1))):
+                                                X3+=1
+                                                
+                                            
                                             if University>(2**((8*((X2-1)//(X2-2))+40)-1)):
                                                     University=0
                                                     k1=-1
                                                     k2=0
                                                     X1+=1  
                                                     counts=-1
-                                                                                                            
+                                                    
+                                                    
+                                                        
+                                                        #Imaginary data
+                                                      
+                                                        
                                                     
                                                                                                
                                             	
-
+                                       
+                                            
                                             
                                             University_file=format(University,C11)
                                            
@@ -831,12 +846,12 @@ class compression:
 
                                                 
                                             
-                                            Divided_corrdiates=int(University_file[0:(X2*8)],2)
-                                            Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Times_10=int(University_file[(X2*8)+8:(X2*8)+16],2)
-                                            Times_11=int(University_file[(X2*8)+16:(X2*8)+24],2)
-                                            N_5=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Times_7=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            Divided_corrdiates=int(University_file[0:(X3*8)],2)
+                                            Times_12=int(University_file[(X3*8):(X3*8)+8],2)
+                                            Times_10=int(University_file[(X3*8)+8:(X3*8)+16],2)
+                                            Times_11=int(University_file[(X3*8)+16:(X3*8)+24],2)
+                                            N_5=int(University_file[(X3*8)+24:(X3*8)+32],2)
+                                            Times_7=int(University_file[(X3*8)+32:(X3*8)+40],2)
                                             counts+=1
                                             #print(counts)
                                             if N_5>=68719476736:
