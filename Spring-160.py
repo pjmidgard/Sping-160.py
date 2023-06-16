@@ -582,7 +582,7 @@ class compression:
                                                        C="0"+str(C3)+"b"
                                                        
                                                        
-                                                       Time_Real3=format(X1,C)
+                                                       Time_Real3=bin(X1)[2:]
                                                        T1=len(Time_Real3)
                                                     
                                                        Time_Real1=bin(T1)[2:]
@@ -602,7 +602,7 @@ class compression:
                                                        C="0"+str(C3)+"b"
 
                                                       
-                                                       Time_Real3=format(counts,C)
+                                                       Time_Real3=bin(counts)[2:]
                                                        T1=len(Time_Real3)
                                                    
                                                        Time_Real1=bin(T1)[2:]
