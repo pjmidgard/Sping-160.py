@@ -305,9 +305,7 @@ class compression:
                                                  X3+=1
                                             
                                             if University>(2**((8*((X2-1)//(X2-2))+40)-1)):
-                                                    University=0
-                                                    k1=-1
-                                                    k2=0
+
                                                     X1+=1  
                                                     counts=-1
                                                     
