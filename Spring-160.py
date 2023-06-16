@@ -571,16 +571,7 @@ class compression:
 
                                                        
                                                        X1-=4
-                                                       C1=bin(X1)[2:]
-                                                       C5=len(C1)
-                                                       C2=C5//8
-                                                       C4=C5%8
-                                                       if C4!=0:
-                                                           C3=(C2+1)*8
-                                                       else:
-                                                           C3=C2*8
-                                                       C="0"+str(C3)+"b"
-                                                       
+
                                                        
                                                        Time_Real3=bin(X1)[2:]
                                                        T1=len(Time_Real3)
@@ -591,15 +582,7 @@ class compression:
                                                        
 
                                                        XN=Time_Real4+Time_Real1+Time_Real3
-                                                       C1=bin(counts)[2:]
-                                                       C5=len(C1)
-                                                       C2=C5//8
-                                                       C4=C5%8
-                                                       if C4!=0:
-                                                           C3=(C2+1)*8
-                                                       else:
-                                                           C3=C2*8
-                                                       C="0"+str(C3)+"b"
+
 
                                                       
                                                        Time_Real3=bin(counts)[2:]
