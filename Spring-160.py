@@ -544,12 +544,7 @@ class compression:
                                                         File_information6_times2=0
                                                         
                                                         
-                                                        if int(INFO,2)==Number_of_the_file:  
 
-
-                                                               if C==1:
-
-                                                                       C=1
                                                                 #print(File_information5_17)
                                                 if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
                                                        lenf=len(File_information5_17)
@@ -1075,12 +1070,7 @@ class compression:
                                                 if  File_information6_times2==Times_12:
                                                         File_information6_times2_1=File_information6_times2
                                                         File_information6_times2=0
-                                                        if int(INFO,2)==Number_of_the_file:  
 
-
-                                                               if C==1:
-
-                                                                       C=1
                                                                 #print(File_information5_17)
                                                 if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR: 
              
