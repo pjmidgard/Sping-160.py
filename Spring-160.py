@@ -299,8 +299,10 @@ class compression:
                                             
                                             C11="0"+str(((8*X3)+40))+"b"
                                             if University>(2**((8*((X3-1)+40)-1))):
-                                                X3+=1
-                                                
+                                                 University=0
+                                                 k1=-1
+                                                 k2=0
+                                                 X3+=1
                                             
                                             if University>(2**((8*((X2-1)//(X2-2))+40)-1)):
                                                     University=0
@@ -819,13 +821,14 @@ class compression:
                                             
                                             C11="0"+str(((8*X3)+40))+"b"
                                             if University>(2**((8*((X3-1)+40)-1))):
-                                                X3+=1
+                                                 University=0
+                                                 k1=-1
+                                                 k2=0
+                                                 X3+=1
                                                 
                                             
                                             if University>(2**((8*((X2-1)//(X2-2))+40)-1)):
-                                                    University=0
-                                                    k1=-1
-                                                    k2=0
+
                                                     X1+=1  
                                                     counts=-1
                                                     
