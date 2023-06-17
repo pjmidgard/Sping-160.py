@@ -31,9 +31,9 @@ class compression:
                         i=2
                  
                     Number_add_plus_one=""
-                  
+                  
                     Clear=""
-                
+                
                       
                     name = input("What is name of file?")
                    
@@ -266,9 +266,9 @@ class compression:
                                     Plus=-1
                                     Times_12=1
                                     University=-1
-                                    Divided_corrdiates=1  
+                                    Divide_n=1  
                                     
-                                    ROOT=-1
+                                    SQUARE_OF_ROOT=-1
                                     Multiply_Times=0
                                 
 
@@ -288,7 +288,7 @@ class compression:
                                            
                                             
                                             
-                                            #ROOT+=1
+                                            #SQUARE_OF_ROOT+=1
                                             #Plus+=1
                                     
                                             
@@ -326,19 +326,19 @@ class compression:
 
                                                 
                                             
-                                            Divided_corrdiates=int(University_file[0:(X3*8)],2)
+                                            Divide_n=int(University_file[0:(X3*8)],2)
                                             Times_12=int(University_file[(X3*8):(X3*8)+8],2)
                                             Multiply=int(University_file[(X3*8)+8:(X3*8)+16],2)
                                             Plus=int(University_file[(X3*8)+16:(X3*8)+24],2)
-                                            ROOT=int(University_file[(X3*8)+24:(X3*8)+32],2)
+                                            SQUARE_OF_ROOT=int(University_file[(X3*8)+24:(X3*8)+32],2)
                                             Multiply_Times=int(University_file[(X3*8)+32:(X3*8)+40],2)
                                             counts+=1
-                                            if ROOT>=68719476736:
-                                                ROOT=0
+                                            if SQUARE_OF_ROOT>=68719476736:
+                                                SQUARE_OF_ROOT=0
                                             elif Times_12>=2**26 and Multiply>=2**26:
                                                 Times_12=1
                                             
-                                                ROOT=0
+                                                SQUARE_OF_ROOT=0
                                              
                                             
 
@@ -351,8 +351,8 @@ class compression:
                                              
 
                                             
-                                            if Divided_corrdiates==0:
-                                            	Divided_corrdiates=1
+                                            if Divide_n==0:
+                                            	Divide_n=1
                                             if Times_12==0:
                                                 Times_12=1 
                                             
@@ -384,7 +384,7 @@ class compression:
                                             Add_N=""
     
                                            
-                                            File_information52=format(ROOT,'024b')
+                                            File_information52=format(SQUARE_OF_ROOT,'024b')
                                             File_information53=format(Multiply,'024b')
                                             
                                             
@@ -498,11 +498,11 @@ class compression:
                                                             Number_of_the_file=0
                                           
                                                         Hole_Number_information=(2**Deep5)-1
-                                                        add_ones_together=Hole_Number_information
+                                                        square_of_Root_n=Hole_Number_information
                                                 
                                                 
                                                                                          
-                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Plus)//3)*Multiply)//Divided_corrdiates
+                                                        Number_of_the_file=((((Number_of_the_file*square_of_Root_n)+Plus)//3)*Multiply)//Divide_n
 
                                                         
                                                         
@@ -635,8 +635,8 @@ class compression:
                                             width_bits="%0"+width_bits+"x"
                                             width_bits3=binascii.unhexlify(width_bits % n)
                                             width_bits2=len(width_bits3)
-                                        
-                                        
+                                        
+                                        
                                             File_information5_2=Clear
                                             name=name+"/"
                                             name_2=str(counts)
@@ -786,9 +786,9 @@ class compression:
                                     Plus=-1
                                     Times_12=1
                                     University=-1
-                                    Divided_corrdiates=1  
+                                    Divide_n=1  
                                     
-                                    ROOT=-1
+                                    SQUARE_OF_ROOT=-1
                                     Multiply_Times=0
                                 
 
@@ -808,7 +808,7 @@ class compression:
                                            
                                             
                                             
-                                            #ROOT+=1
+                                            #SQUARE_OF_ROOT+=1
                                             #Plus+=1
                                     
                                             
@@ -847,20 +847,20 @@ class compression:
 
                                                 
                                             
-                                            Divided_corrdiates=int(University_file[0:(X3*8)],2)
+                                            Divide_n=int(University_file[0:(X3*8)],2)
                                             Times_12=int(University_file[(X3*8):(X3*8)+8],2)
                                             Multiply=int(University_file[(X3*8)+8:(X3*8)+16],2)
                                             Plus=int(University_file[(X3*8)+16:(X3*8)+24],2)
-                                            ROOT=int(University_file[(X3*8)+24:(X3*8)+32],2)
+                                            SQUARE_OF_ROOT=int(University_file[(X3*8)+24:(X3*8)+32],2)
                                             Multiply_Times=int(University_file[(X3*8)+32:(X3*8)+40],2)
                                             counts+=1
                                             #print(counts)
-                                            if ROOT>=68719476736:
-                                                ROOT=0
+                                            if SQUARE_OF_ROOT>=68719476736:
+                                                SQUARE_OF_ROOT=0
                                             elif Times_12>=2**26 and Multiply>=2**26:
                                                 Times_12=1
                                             
-                                                ROOT=0
+                                                SQUARE_OF_ROOT=0
                                             
                                          
 
@@ -873,8 +873,8 @@ class compression:
                                              
 
                                             
-                                            if Divided_corrdiates==0:
-                                            	Divided_corrdiates=1
+                                            if Divide_n==0:
+                                            	Divide_n=1
                                             if Times_12==0:
                                                 Times_12=1 
                                             
@@ -906,7 +906,7 @@ class compression:
                                             Add_N=""
     
                                            
-                                            File_information52=format(ROOT,'024b')
+                                            File_information52=format(SQUARE_OF_ROOT,'024b')
                                             File_information53=format(Multiply,'024b')
                                             
                                             
@@ -1020,11 +1020,11 @@ class compression:
                                                             Number_of_the_file=0
                                           
                                                         Hole_Number_information=(2**Deep5)-1
-                                                        add_ones_together=Hole_Number_information
+                                                        square_of_Root_n=Hole_Number_information
                                                 
                                                 
                                                                                          
-                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Plus)//3)*Multiply)//Divided_corrdiates
+                                                        Number_of_the_file=((((Number_of_the_file*square_of_Root_n)+Plus)//3)*Multiply)//Divide_n
 
                                                         
                                                         
@@ -1112,9 +1112,9 @@ class compression:
                                             width_bits="%0"+width_bits+"x"
                                             width_bits3=binascii.unhexlify(width_bits % n)
                                             width_bits2=len(width_bits3)
-                                     
-                                       
-                                          
+                                     
+                                       
+                                          
                                           
                     
                                            
