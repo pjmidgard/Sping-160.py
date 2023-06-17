@@ -68,8 +68,8 @@ class compression:
                     
                             
                     
-                    namem=""
-                    namema="?"
+                    
+                    
         
                     name_2=name
                     long_add_or_minus_n=len(name_2)
@@ -260,16 +260,16 @@ class compression:
  
                                     
                                     Extract1=0
-                                    Times_10=1
+                                    Multiply=1
                                     counts=-1
                                   
-                                    Times_11=-1
+                                    Plus=-1
                                     Times_12=1
                                     University=-1
                                     Divided_corrdiates=1  
                                     
-                                    N_5=-1
-                                    Times_7=0
+                                    ROOT=-1
+                                    Multiply_Times=0
                                 
 
                                     while Extract1!=1:
@@ -288,8 +288,8 @@ class compression:
                                            
                                             
                                             
-                                            #N_5+=1
-                                            #Times_11+=1
+                                            #ROOT+=1
+                                            #Plus+=1
                                     
                                             
                                             
@@ -328,17 +328,17 @@ class compression:
                                             
                                             Divided_corrdiates=int(University_file[0:(X3*8)],2)
                                             Times_12=int(University_file[(X3*8):(X3*8)+8],2)
-                                            Times_10=int(University_file[(X3*8)+8:(X3*8)+16],2)
-                                            Times_11=int(University_file[(X3*8)+16:(X3*8)+24],2)
-                                            N_5=int(University_file[(X3*8)+24:(X3*8)+32],2)
-                                            Times_7=int(University_file[(X3*8)+32:(X3*8)+40],2)
+                                            Multiply=int(University_file[(X3*8)+8:(X3*8)+16],2)
+                                            Plus=int(University_file[(X3*8)+16:(X3*8)+24],2)
+                                            ROOT=int(University_file[(X3*8)+24:(X3*8)+32],2)
+                                            Multiply_Times=int(University_file[(X3*8)+32:(X3*8)+40],2)
                                             counts+=1
-                                            if N_5>=68719476736:
-                                                N_5=0
-                                            elif Times_12>=2**26 and Times_10>=2**26:
+                                            if ROOT>=68719476736:
+                                                ROOT=0
+                                            elif Times_12>=2**26 and Multiply>=2**26:
                                                 Times_12=1
                                             
-                                                N_5=0
+                                                ROOT=0
                                              
                                             
 
@@ -356,8 +356,8 @@ class compression:
                                             if Times_12==0:
                                                 Times_12=1 
                                             
-                                            if Times_10==0:
-                                                Times_10=1 
+                                            if Multiply==0:
+                                                Multiply=1 
                                            
                                             
         
@@ -384,14 +384,14 @@ class compression:
                                             Add_N=""
     
                                            
-                                            File_information52=format(N_5,'024b')
-                                            File_information53=format(Times_10,'024b')
+                                            File_information52=format(ROOT,'024b')
+                                            File_information53=format(Multiply,'024b')
                                             
                                             
 
-                                            Add_N=format(Times_11,'024b')
+                                            Add_N=format(Plus,'024b')
                                             if   File_information6_times2==0:
-                                                File_information54=format(Times_7,'040b')
+                                                File_information54=format(Multiply_Times,'040b')
                                                 File_information5_2=File_information54
                                                 
                  
@@ -412,7 +412,7 @@ class compression:
                                                
                                            
                                             
-                                            File_information53=format(Times_10,'024b')                                            
+                                            File_information53=format(Multiply,'024b')                                            
                                             
                                                                                    
                                             
@@ -475,7 +475,7 @@ class compression:
                                                         long_16=len(File_information54)
                                                         #print("Deep: ")
                                                         #print(Deep7-25)
-                                                        Times_half_Real=0
+                                                        Times_half_Random =0
                                                 if   File_information6_times2>0:
                                                         Translate_info_Decimal_2=0
                                                         
@@ -502,12 +502,12 @@ class compression:
                                                 
                                                 
                                                                                          
-                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Times_11)//3)*Times_10)//Divided_corrdiates
+                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Plus)//3)*Multiply)//Divided_corrdiates
 
                                                         
                                                         
                                                         
-                                                        Times_half_Real+=1
+                                                        Times_half_Random +=1
                                                         
                                                         
                                                         
@@ -553,10 +553,10 @@ class compression:
                                                                 #print(File_information5_17)
                                                 if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
                                                        long_1=len(File_information5_17)
-                                                       Time_Real3=bin(long_12)[2:]
-                                                       T1=len(Time_Real3)
-                                                       Time_Real4=format(T1,'06b')
-                                                       long_file=Time_Real4+Time_Real3
+                                                       Time_Random=bin(long_12)[2:]
+                                                       T1=len(Time_Random)
+                                                       Time_Random=format(T1,'06b')
+                                                       long_file=Time_Random+Time_Random
 
 
 
@@ -578,25 +578,25 @@ class compression:
                                                        X1-=4
 
                                                        
-                                                       Time_Real3=bin(X1)[2:]
-                                                       T1=len(Time_Real3)
+                                                       Time_Random=bin(X1)[2:]
+                                                       T1=len(Time_Random)
                                                     
-                                                       Time_Real1=bin(T1)[2:]
-                                                       T2=len(Time_Real1)
-                                                       Time_Real4=format(T2,'06b')
+                                                       Time_Random=bin(T1)[2:]
+                                                       T2=len(Time_Random)
+                                                       Time_Random=format(T2,'06b')
                                                        
 
-                                                       XN=Time_Real4+Time_Real1+Time_Real3
+                                                       XN=Time_Random+Time_Random+Time_Random
 
 
                                                       
-                                                       Time_Real3=bin(counts)[2:]
-                                                       T1=len(Time_Real3)
+                                                       Time_Random=bin(counts)[2:]
+                                                       T1=len(Time_Random)
                                                    
-                                                       Time_Real1=bin(T1)[2:]
-                                                       T2=len(Time_Real1)
-                                                       Time_Real4=format(T2,'06b')
-                                                       Counts=Time_Real4+Time_Real1+Time_Real3
+                                                       Time_Random=bin(T1)[2:]
+                                                       T2=len(Time_Random)
+                                                       Time_Random=format(T2,'06b')
+                                                       Counts=Time_Random+Time_Random+Time_Random
                                                        
 
 
@@ -737,19 +737,19 @@ class compression:
                                                 #print(Extract_info)
                                                 
                                                
-                                                Real_C=int(File_information5[0:6],2)
+                                                Random_C=int(File_information5[0:6],2)
                                                 File_information5=File_information5[6:]
-                                                Real_C1=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                XR=int(File_information5[:Real_C1],2)
+                                                Random_C1=int(File_information5[:Random_C],2)
+                                                File_information5=File_information5[Random_C:]
+                                                XR=int(File_information5[:Random_C1],2)
                                                 XR+=4
 
-                                                File_information5=File_information5[Real_C1:]
-                                                Real_C=int(File_information5[0:6],2)
+                                                File_information5=File_information5[Random_C1:]
+                                                Random_C=int(File_information5[0:6],2)
                                                 File_information5=File_information5[6:]
-                                                Real_C1=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
-                                                Extract_info=int(File_information5[:Real_C1],2)
+                                                Random_C1=int(File_information5[:Random_C],2)
+                                                File_information5=File_information5[Random_C:]
+                                                Extract_info=int(File_information5[:Random_C1],2)
                                                 M=str(Extract_info)
                                                 ML=len(name_2)
                                                 if ML<10:
@@ -760,11 +760,11 @@ class compression:
                                                     print("This is wrong name of file!")
                                                     raise SystemExit 
                                                 
-                                                File_information5=File_information5[Real_C1:]
-                                                Real_C=int(File_information5[0:6],2)
+                                                File_information5=File_information5[Random_C1:]
+                                                Random_C=int(File_information5[0:6],2)
                                                 File_information5=File_information5[6:]
-                                                long=int(File_information5[:Real_C],2)
-                                                File_information5=File_information5[Real_C:]
+                                                long=int(File_information5[:Random_C],2)
+                                                File_information5=File_information5[Random_C:]
                                                 
                                                                                                #08122#17#18
                                     
@@ -780,16 +780,16 @@ class compression:
  
                                     
                                     Extract1=0
-                                    Times_10=1
+                                    Multiply=1
                                     counts=-1
                                   
-                                    Times_11=-1
+                                    Plus=-1
                                     Times_12=1
                                     University=-1
                                     Divided_corrdiates=1  
                                     
-                                    N_5=-1
-                                    Times_7=0
+                                    ROOT=-1
+                                    Multiply_Times=0
                                 
 
                                     while Extract1!=1:
@@ -808,8 +808,8 @@ class compression:
                                            
                                             
                                             
-                                            #N_5+=1
-                                            #Times_11+=1
+                                            #ROOT+=1
+                                            #Plus+=1
                                     
                                             
                                             
@@ -849,18 +849,18 @@ class compression:
                                             
                                             Divided_corrdiates=int(University_file[0:(X3*8)],2)
                                             Times_12=int(University_file[(X3*8):(X3*8)+8],2)
-                                            Times_10=int(University_file[(X3*8)+8:(X3*8)+16],2)
-                                            Times_11=int(University_file[(X3*8)+16:(X3*8)+24],2)
-                                            N_5=int(University_file[(X3*8)+24:(X3*8)+32],2)
-                                            Times_7=int(University_file[(X3*8)+32:(X3*8)+40],2)
+                                            Multiply=int(University_file[(X3*8)+8:(X3*8)+16],2)
+                                            Plus=int(University_file[(X3*8)+16:(X3*8)+24],2)
+                                            ROOT=int(University_file[(X3*8)+24:(X3*8)+32],2)
+                                            Multiply_Times=int(University_file[(X3*8)+32:(X3*8)+40],2)
                                             counts+=1
                                             #print(counts)
-                                            if N_5>=68719476736:
-                                                N_5=0
-                                            elif Times_12>=2**26 and Times_10>=2**26:
+                                            if ROOT>=68719476736:
+                                                ROOT=0
+                                            elif Times_12>=2**26 and Multiply>=2**26:
                                                 Times_12=1
                                             
-                                                N_5=0
+                                                ROOT=0
                                             
                                          
 
@@ -878,8 +878,8 @@ class compression:
                                             if Times_12==0:
                                                 Times_12=1 
                                             
-                                            if Times_10==0:
-                                                Times_10=1 
+                                            if Multiply==0:
+                                                Multiply=1 
                                            
                                             
         
@@ -906,14 +906,14 @@ class compression:
                                             Add_N=""
     
                                            
-                                            File_information52=format(N_5,'024b')
-                                            File_information53=format(Times_10,'024b')
+                                            File_information52=format(ROOT,'024b')
+                                            File_information53=format(Multiply,'024b')
                                             
                                             
 
-                                            Add_N=format(Times_11,'024b')
+                                            Add_N=format(Plus,'024b')
                                             if   File_information6_times2==0:
-                                                File_information54=format(Times_7,'040b')
+                                                File_information54=format(Multiply_Times,'040b')
                                                 File_information5_2=File_information54
                                                 
                  
@@ -934,7 +934,7 @@ class compression:
                                                
                                            
                                             
-                                            File_information53=format(Times_10,'024b')                                            
+                                            File_information53=format(Multiply,'024b')                                            
                                             
                                                                                    
                                             
@@ -997,7 +997,7 @@ class compression:
                                                         long_16=len(File_information54)
                                                         #print("Deep: ")
                                                         #print(Deep7-25)
-                                                        Times_half_Real=0
+                                                        Times_half_Random =0
                                                 if   File_information6_times2>0:
                                                         Translate_info_Decimal_2=0
                                                         
@@ -1024,12 +1024,12 @@ class compression:
                                                 
                                                 
                                                                                          
-                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Times_11)//3)*Times_10)//Divided_corrdiates
+                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Plus)//3)*Multiply)//Divided_corrdiates
 
                                                         
                                                         
                                                         
-                                                        Times_half_Real+=1
+                                                        Times_half_Random +=1
                                                         
                                                         
                                                         
@@ -1135,7 +1135,7 @@ class compression:
                                             
                                             return xs;
    
-d=compression()
+R=compression()
 
-xw1=d.cryptograpy_compression4()
-print(xw1)
+xt1=R.cryptograpy_compression4()
+print(xt1)
