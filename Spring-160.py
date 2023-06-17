@@ -31,9 +31,9 @@ class compression:
                         i=2
                  
                     Number_add_plus_one=""
-                    Prime_Not=""
+                  
                     Clear=""
-                    Corrupted=0
+                
                       
                     name = input("What is name of file?")
                    
