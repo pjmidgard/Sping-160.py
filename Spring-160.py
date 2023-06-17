@@ -846,7 +846,7 @@ class compression:
                                             #print(counts)
                                             if N_5>=68719476736:
                                                 N_5=0
-                                            if Times_12>=2**26
+                                            if Times_12>=2**26:
                                                 Times_12=1
                                                 
                                      
