@@ -652,7 +652,7 @@ class compression:
                                                 M=nameas[:10]
 
                                    
-                                            with open(nameas, "w") as f6:
+                                            with open(M, "w") as f6:
                                                 
                                                 f6.write(name)
 
@@ -661,7 +661,7 @@ class compression:
                                                     
                                                                                    
                                                             
-                                            with open(nameas, "ab") as f2:
+                                            with open(M, "ab") as f2:
 
                                                 
                                                 f2.write(width_bits3)
