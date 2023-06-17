@@ -321,12 +321,10 @@ class compression:
                                             counts+=1
                                             if N_5>=68719476736:
                                                 N_5=0
-                                            elif Times_12>=2**26 and Times_10>=2**26 and N_5>=2**26 and Times_7>=2**26:
+                                            if Times_12>=2**26:
                                                 Times_12=1
-                                                Times_10=1
-                                                N_5=0
-                                                Times_7=0
-                                                N_5=0
+                                              
+                                             
 
                                            
                                             
@@ -848,12 +846,10 @@ class compression:
                                             #print(counts)
                                             if N_5>=68719476736:
                                                 N_5=0
-                                            elif Times_12>=2**26 and Times_10>=2**26 and N_5>=2**26 and Times_7>=2**26:
+                                            if Times_12>=2**26
                                                 Times_12=1
-                                                Times_10=1
-                                                N_5=0
-                                                Times_7=0
-                                                N_5=0
+                                                
+                                     
 
                                            
                                             
