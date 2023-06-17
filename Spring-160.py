@@ -89,13 +89,13 @@ class compression:
                             
      
 
-                   
+                    if i==2:
 
                         
                
                          
                        
-                       
+                        C=1
 
 
          
@@ -357,15 +357,148 @@ class compression:
                                                 Times_12=1 
                                             
                                             if Times_10==0:
-                                                Times_10=1
-                                            Number_of_the_file=Times_7
-                                            if   File_information6_times2>0:
+                                                Times_10=1 
+                                           
+                                            
+        
+                                             
+                                            
+                                             
+                                                                                    
+                                            
+                                            
+                                           
+                            
+                                           
+                                            
+                                          
+                                          
+                                           
+                                       
+                                            
+ 
+                                            
+                                            File_information52=""
+                                            File_information53=""
+                                            File_information54=""
+                                            Add_N=""
+    
+                                           
+                                            File_information52=format(N_5,'024b')
+                                            File_information53=format(Times_10,'024b')
+                                            
+                                            
+
+                                            Add_N=format(Times_11,'024b')
+                                            if   File_information6_times2==0:
+                                                File_information54=format(Times_7,'040b')
+                                                File_information5_2=File_information54
+                                                
+                 
+
+                                            
+                                            File_information54=File_information5_2
+ 
+                                           
+                                             
+                                            
+                                           
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            #print(B)
+                                               
+                                           
+                                            
+                                            File_information53=format(Times_10,'024b')                                            
+                                            
+                                                                                   
+                                            
+                                                                                         
+                                                
+                                            File_information5_2=File_information54
+    
+                                            
+                                            File_information5_17=""
+                                      
+                                            
+                                            
+                                            lenf6=len(File_information54)
+    
+    
+                                            add_bits=""
+    
+                                            Times_6=""
+    
+                                            #Extract
+    
+                                            INFO10=""
+                                            Translate_info_Decimal=""
+                                          
+                                           
+                                            Times_6=""
+                                        
+                                            Number_of_the_file=0
+                                          
+    
+                                            C=1
+                                         
+                                            if C==1:
+                                                if   File_information6_times2==0:
+    
+                                                         
+    
+                                                        
+    
+                                                        
+                                                        
+                                                        
+                                                        lenf6=len(File_information54)
+    
+                                                        INFO10=File_information52
+                                                        Deep5 = int(INFO10, 2)
+                                                       
+                                                      
+                                                        
+                                                        lenf6=len(File_information54)
+                                                        File_information54=File_information5_2
+                                                        
+                                                      
+                                                        
+                                                        Times_6=File_information53
+                                                        Add_N=Add_N
+                                                        
+                                                        T = int(Times_6, 2)
+                                                        Add= int(Add_N, 2)
+                                                        lenf6=len(File_information54)
+                                                        #print("Deep: ")
+                                                        #print(Deep7-25)
+                                                        Times_half_Real=0
+                                                if   File_information6_times2>0:
                                                         Translate_info_Decimal_2=0
-                                                        if Times_12!=0:
-                                                            Hole_Number_information=(2**N5)-1
+                                                        
+                                                
+                                                        
+            
+                                                if C==1 and Times_12!=0:
+                                                        File_information54=File_information54
+                                                        lenf6=len(File_information54)
+                                                       
+                                                        
+                                                       
+                                                        if len (File_information54)!=0:
+                        
+                                                                                                    
+                                                            Number_of_the_file=int(File_information54, 2)
+                                                                                                     
+
+                                                        else:
+                                                            Number_of_the_file=0
+                                          
+                                                        Hole_Number_information=(2**Deep5)-1
                                                         add_ones_together=Hole_Number_information
-                                                        
-                                                        
                                                 
                                                 
                                                                                          
@@ -404,7 +537,7 @@ class compression:
                                                 Make_togher=Times_6
                                                 
                                                 add_bits=""
-                                                if Times_12!=0:
+                                                if C==1 and Times_12!=0:
                                                         File_information6_times2=File_information6_times2+1
     
                                                 lenf9=len(File_information5_17)
@@ -563,7 +696,7 @@ class compression:
 
                                     
                                  
-                                    if i==2:
+                                    if C==1:
                                         
                                         if   File_information6_times2==0:
                                             File_information5=INFO
@@ -747,12 +880,147 @@ class compression:
                                             
                                             if Times_10==0:
                                                 Times_10=1 
-                                            Number_of_the_file=Times_7
-                                            if   File_information6_times2>0:
+                                           
+                                            
+        
+                                             
+                                            
+                                             
+                                                                                    
+                                            
+                                            
+                                           
+                            
+                                           
+                                            
+                                          
+                                          
+                                           
+                                       
+                                            
+ 
+                                            
+                                            File_information52=""
+                                            File_information53=""
+                                            File_information54=""
+                                            Add_N=""
+    
+                                           
+                                            File_information52=format(N_5,'024b')
+                                            File_information53=format(Times_10,'024b')
+                                            
+                                            
+
+                                            Add_N=format(Times_11,'024b')
+                                            if   File_information6_times2==0:
+                                                File_information54=format(Times_7,'040b')
+                                                File_information5_2=File_information54
+                                                
+                 
+
+                                            
+                                            File_information54=File_information5_2
+ 
+                                           
+                                             
+                                            
+                                           
+                                            
+                                            
+                                            
+                                                
+                                            
+                                            #print(B)
+                                               
+                                           
+                                            
+                                            File_information53=format(Times_10,'024b')                                            
+                                            
+                                                                                   
+                                            
+                                                                                         
+                                                
+                                            File_information5_2=File_information54
+    
+                                            
+                                            File_information5_17=""
+                                      
+                                            
+                                            
+                                            lenf6=len(File_information54)
+    
+    
+                                            add_bits=""
+    
+                                            Times_6=""
+    
+                                            #Extract
+    
+                                            INFO10=""
+                                            Translate_info_Decimal=""
+                                          
+                                           
+                                            Times_6=""
+                                        
+                                            Number_of_the_file=0
+                                          
+    
+                                            C=1
+                                         
+                                            if C==1:
+                                                if   File_information6_times2==0:
+    
+                                                         
+    
+                                                        
+    
+                                                        
+                                                        
+                                                        
+                                                        lenf6=len(File_information54)
+    
+                                                        INFO10=File_information52
+                                                        Deep5 = int(INFO10, 2)
+                                                       
+                                                      
+                                                        
+                                                        lenf6=len(File_information54)
+                                                        File_information54=File_information5_2
+                                                        
+                                                      
+                                                        
+                                                        Times_6=File_information53
+                                                        Add_N=Add_N
+                                                        
+                                                        T = int(Times_6, 2)
+                                                        Add= int(Add_N, 2)
+                                                        lenf6=len(File_information54)
+                                                        #print("Deep: ")
+                                                        #print(Deep7-25)
+                                                        Times_half_Real=0
+                                                if   File_information6_times2>0:
                                                         Translate_info_Decimal_2=0
-                                                        if Times_12!=0:
-                                                            Hole_Number_information=(2**N_5)-1
-                                                            add_ones_together=Hole_Number_information
+                                                        
+                                                
+                                                        
+            
+                                                if C==1 and Times_12!=0:
+                                                        File_information54=File_information54
+                                                        lenf6=len(File_information54)
+                                                       
+                                                        
+                                                       
+                                                        if len (File_information54)!=0:
+                        
+                                                                                                    
+                                                            Number_of_the_file=int(File_information54, 2)
+                                                                                                     
+
+                                                        else:
+                                                            Number_of_the_file=0
+                                          
+                                                        Hole_Number_information=(2**Deep5)-1
+                                                        add_ones_together=Hole_Number_information
                                                 
                                                 
                                                                                          
@@ -775,7 +1043,7 @@ class compression:
                                                
 
                                               
-                                            
+                                            #####################################################################################################################################################
                                            
                                             
                                             
@@ -791,18 +1059,18 @@ class compression:
                                                 Make_togher=Times_6
                                                 
                                                 add_bits=""
-                                                if Times_12!=0:
+                                                if C==1 and Times_12!=0:
                                                         File_information6_times2=File_information6_times2+1
     
-                                               
-                                             
+                                                lenf9=len(File_information5_17)
+                                                #print(File_information6_times2)
                                                 
                                                 
                                                 if  File_information6_times2==Times_12:
                                                         File_information6_times2_1=File_information6_times2
                                                         File_information6_times2=0
 
-                                                              
+                                                                #print(File_information5_17)
                                                 if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR: 
              
                                                        lenf=len(File_information5_17)
@@ -846,7 +1114,7 @@ class compression:
                                             width_bits2=len(width_bits3)
                                             add_bitszzza=""
                                             add_bitszs=""
-                                          
+                                            File_information5_2=Times_6
                                           
                     
                                            
