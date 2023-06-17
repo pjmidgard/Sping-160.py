@@ -635,8 +635,8 @@ class compression:
                                             width_bits="%0"+width_bits+"x"
                                             width_bits3=binascii.unhexlify(width_bits % n)
                                             width_bits2=len(width_bits3)
-                                            add_bitszzza=""
-                                            add_bitszs=""
+                                        
+                                        
                                             File_information5_2=Clear
                                             name=name+"/"
                                             name_2=str(counts)
@@ -1112,9 +1112,9 @@ class compression:
                                             width_bits="%0"+width_bits+"x"
                                             width_bits3=binascii.unhexlify(width_bits % n)
                                             width_bits2=len(width_bits3)
-                                            add_bitszzza=""
-                                            add_bitszs=""
-                                            File_information5_2=Clear
+                                     
+                                       
+                                          
                                           
                     
                                            
