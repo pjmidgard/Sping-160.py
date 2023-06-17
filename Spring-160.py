@@ -32,7 +32,7 @@ class compression:
                  
                     Number_add_plus_one=""
                     Prime_Not=""
-                    Times_6=""
+                    Clear=""
                     Corrupted=0
                       
                     name = input("What is name of file?")
@@ -118,7 +118,7 @@ class compression:
                     File_information5_2=""
 
                   
-                    Times_6=""
+                    Clear=""
 
                     Translate_info_Decimal=""
 
@@ -430,7 +430,7 @@ class compression:
     
                                             add_bits=""
     
-                                            Times_6=""
+                                            Clear=""
     
                                             #Extract
     
@@ -438,7 +438,7 @@ class compression:
                                             Translate_info_Decimal=""
                                           
                                            
-                                            Times_6=""
+                                            Clear=""
                                         
                                             Number_of_the_file=0
                                           
@@ -467,10 +467,10 @@ class compression:
                                                         
                                                       
                                                         
-                                                        Times_6=File_information53
+                                                        Clear=File_information53
                                                         Add_N=Add_N
                                                         
-                                                        T = int(Times_6, 2)
+                                                        T = int(Clear, 2)
                                                         Add= int(Add_N, 2)
                                                         long_16=len(File_information54)
                                                         #print("Deep: ")
@@ -534,7 +534,7 @@ class compression:
     
                                             if i==1:
                                                 Make_togher=""
-                                                Make_togher=Times_6
+                                                Make_togher=Clear
                                                 
                                                 add_bits=""
                                                 if C==1 and Times_12!=0:
@@ -637,7 +637,7 @@ class compression:
                                             width_bits2=len(width_bits3)
                                             add_bitszzza=""
                                             add_bitszs=""
-                                            File_information5_2=Times_6
+                                            File_information5_2=Clear
                                             name=name+"/"
                                             name_2=str(counts)
                                             ML=len(name_2)
@@ -952,7 +952,7 @@ class compression:
     
                                             add_bits=""
     
-                                            Times_6=""
+                                            Clear=""
     
                                             #Extract
     
@@ -960,7 +960,7 @@ class compression:
                                             Translate_info_Decimal=""
                                           
                                            
-                                            Times_6=""
+                                            Clear=""
                                         
                                             Number_of_the_file=0
                                           
@@ -989,10 +989,10 @@ class compression:
                                                         
                                                       
                                                         
-                                                        Times_6=File_information53
+                                                        Clear=File_information53
                                                         Add_N=Add_N
                                                         
-                                                        T = int(Times_6, 2)
+                                                        T = int(Clear, 2)
                                                         Add= int(Add_N, 2)
                                                         long_16=len(File_information54)
                                                         #print("Deep: ")
@@ -1056,7 +1056,7 @@ class compression:
     
                                             if i==2:
                                                 Make_togher=""
-                                                Make_togher=Times_6
+                                                Make_togher=Clear
                                                 
                                                 add_bits=""
                                                 if C==1 and Times_12!=0:
@@ -1114,7 +1114,7 @@ class compression:
                                             width_bits2=len(width_bits3)
                                             add_bitszzza=""
                                             add_bitszs=""
-                                            File_information5_2=Times_6
+                                            File_information5_2=Clear
                                           
                     
                                            
