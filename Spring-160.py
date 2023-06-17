@@ -72,7 +72,7 @@ class compression:
                     namema="?"
         
                     name_2=name
-                    nac=len(name_2)
+                    long_add_or_minus_n=len(name_2)
                     
                     compress_or_not_compress=1
                     File_information6_times3=0
@@ -109,7 +109,7 @@ class compression:
 
                     
                     	
-                    nac=len(name_2)
+                    long_add_or_minus_n=len(name_2)
                     
                    
                     s=""
@@ -335,12 +335,12 @@ class compression:
                                             counts+=1
                                             if N_5>=68719476736:
                                                 N_5=0
-                                            elif Times_12>=2**26 and Times_10>=2**26:
+                                            elif Times_12>=2**26 and Times_10>=2**26:
                                                 Times_12=1
-                                            
+                                            
                                                 N_5=0
-                                             
-                                            
+                                             
+                                            
 
                                            
                                             
@@ -857,12 +857,12 @@ class compression:
                                             #print(counts)
                                             if N_5>=68719476736:
                                                 N_5=0
-                                            elif Times_12>=2**26 and Times_10>=2**26:
+                                            elif Times_12>=2**26 and Times_10>=2**26:
                                                 Times_12=1
-                                            
+                                            
                                                 N_5=0
-                                            
-                                         
+                                            
+                                         
 
                                            
                                             
