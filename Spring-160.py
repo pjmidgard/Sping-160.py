@@ -1636,7 +1636,7 @@ class compression:
                                                        T1=len(Time_Real3)
 
 
-                                                       Time_Real4=format(T1,'08b')
+                                                       Time_Real4=format(T1,'05b')
 
 
                                                        long_file=Time_Real4+Time_Real3
@@ -1729,7 +1729,7 @@ class compression:
                                                        
 
 
-                                                       Time_Real3=format(X1,C)
+                                                       Time_Real3=bin(X1)[2:]
                                                        T1=len(Time_Real3)
 
 
@@ -1742,7 +1742,7 @@ class compression:
                                                        T2=len(Time_Real1)
 
 
-                                                       Time_Real4=format(T2,'08b')
+                                                       Time_Real4=format(T2,'05b')
 
 
                                                        
@@ -1787,7 +1787,7 @@ class compression:
                                                       
 
 
-                                                       Time_Real3=format(counts,C)
+                                                       Time_Real3=bin(counts)[2:]
                                                        T1=len(Time_Real3)
 
 
@@ -1800,7 +1800,7 @@ class compression:
                                                        T2=len(Time_Real1)
 
 
-                                                       Time_Real4=format(T2,'08b')
+                                                       Time_Real4=format(T2,'05b')
 
 
                                                        Counts=Time_Real4+Time_Real1+Time_Real3
@@ -1836,7 +1836,7 @@ class compression:
 
 
 
-                                                               File_information5_17="1"+XN+Counts+long_file
+                                                               File_information5_17="01"+XN+Counts+long_file
 
 
                                                                long_1=len(File_information5_17)
@@ -1854,7 +1854,7 @@ class compression:
                                                                if count_bits!=0:
 
 
-                                                                   if count_bits!=8:
+
 
 
                                                                        while z<count_bits:
@@ -2226,10 +2226,10 @@ class compression:
                                                
 
 
-                                                Random_C=int(File_information5[0:8],2)
+                                                Random_C=int(File_information5[0:5],2)
 
 
-                                                File_information5=File_information5[8:]
+                                                File_information5=File_information5[5:]
 
 
                                                 Random_C1=int(File_information5[:Random_C],2)
@@ -2247,10 +2247,10 @@ class compression:
                                                 File_information5=File_information5[Random_C1:]
 
 
-                                                Random_C=int(File_information5[0:8],2)
+                                                Random_C=int(File_information5[0:5],2)
 
 
-                                                File_information5=File_information5[8:]
+                                                File_information5=File_information5[5:]
 
 
                                                 Random_C1=int(File_information5[:Random_C],2)
@@ -2295,10 +2295,10 @@ class compression:
                                                 File_information5=File_information5[Random_C1:]
 
 
-                                                Random_C=int(File_information5[0:8],2)
+                                                Random_C=int(File_information5[0:5],2)
 
 
-                                                File_information5=File_information5[8:]
+                                                File_information5=File_information5[5:]
 
 
                                                 long=int(File_information5[:Random_C],2)
