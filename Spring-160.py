@@ -544,7 +544,7 @@ class compression:
                                                        long_1=len(File_information5_17)
                                                        Time_Real3=bin(long_12)[2:]
                                                        T1=len(Time_Real3)
-                                                       Time_Real4=format(T1,'06b')
+                                                       Time_Real4=format(T1,'07b')
                                                        long_file=Time_Real4+Time_Real3
 
 
@@ -575,12 +575,12 @@ class compression:
                                                        C="0"+str(C3)+"b"
                                                        
                                                        
-                                                       Time_Real3=format(X1,C)
+                                                       Time_Real3=bin(X1)[2:]
                                                        T1=len(Time_Real3)
                                                     
                                                        Time_Real1=bin(T1)[2:]
                                                        T2=len(Time_Real1)
-                                                       Time_Real4=format(T2,'06b')
+                                                       Time_Real4=format(T2,'07b')
                                                        
 
                                                        XN=Time_Real4+Time_Real1+Time_Real3
@@ -595,12 +595,12 @@ class compression:
                                                        C="0"+str(C3)+"b"
 
                                                       
-                                                       Time_Real3=format(counts,C)
+                                                       Time_Real3=bin(counts)[2:]
                                                        T1=len(Time_Real3)
                                                    
                                                        Time_Real1=bin(T1)[2:]
                                                        T2=len(Time_Real1)
-                                                       Time_Real4=format(T2,'06b')
+                                                       Time_Real4=format(T2,'07b')
                                                        Counts=Time_Real4+Time_Real1+Time_Real3
                                                        
 
@@ -742,15 +742,15 @@ class compression:
                                                 #print(Extract_info)
                                                 
                                                
-                                                Random_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
+                                                Random_C=int(File_information5[0:7],2)
+                                                File_information5=File_information5[7:]
                                                 Random_C1=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]
                                                 XR=int(File_information5[:Random_C1],2)
 
                                                 File_information5=File_information5[Random_C1:]
-                                                Random_C=int(File_information5[0:6],2)
-                                                File_information5=File_information5[6:]
+                                                Random_C=int(File_information5[0:7],2)
+                                                File_information5=File_information5[7:]
                                                 Random_C1=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]
                                                 Extract_info=int(File_information5[:Random_C1],2)
