@@ -433,7 +433,7 @@ class compression:
                              print("Not an integer!")
 
 
-                             continue
+                             raise SystemExit
 
 
                           else:
