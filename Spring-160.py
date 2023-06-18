@@ -31,9 +31,9 @@ class compression:
                         i=2
                  
                     Number_add_plus_one=""
-                    Prime_Not=""
-                    Times_6=""
-                    Corrupted=0
+                 
+                    Clear=""
+                  
                       
                     name = input("What is name of file?")
                    
@@ -62,20 +62,20 @@ class compression:
                     
                     n=0
                     x = time()
-                    File_information6_times2_1=0
+                    File_information6_Times2_1=0
                    
                    
                     
                             
                     
-                    namem=""
-                    namema="?"
+                   
+                    
         
                     name_2=name
-                    nac=len(name_2)
+                    Long_Change=len(name_2)
                     
                     compress_or_not_compress=1
-                    File_information6_times3=0
+                    File_information6_Times3=0
                     
                   
                                             
@@ -109,7 +109,7 @@ class compression:
 
                     
                     	
-                    nac=len(name_2)
+                    Long_Change=len(name_2)
                     
                    
                     s=""
@@ -118,7 +118,7 @@ class compression:
                     File_information5_2=""
 
                   
-                    Times_6=""
+                    Clear=""
 
                     Translate_info_Decimal=""
 
@@ -166,7 +166,7 @@ class compression:
                         	 raise SystemExit
                         
                         END_working=0
-                        File_information6_times2=0
+                        File_information6_Times2=0
                                    
                         File_information5_23=""
  
@@ -176,10 +176,10 @@ class compression:
                         SpinS=0
                         while END_working<10:
                        
-                            File_information6_times3=File_information6_times3+1
+                            File_information6_Times3=File_information6_Times3+1
                             D=1
                             if D==1:
-                                if File_information6_times3==1:
+                                if File_information6_Times3==1:
 
                                  
                                     INFO=bin(int(binascii.hexlify(data),16))[2:]#data to binary
@@ -195,7 +195,7 @@ class compression:
                                             
                                     
 
-                                    if File_information6_times3==1:
+                                    if File_information6_Times3==1:
                                         File_information5_2=INFO
                             
                                     n = int(File_information5_2, 2)
@@ -258,7 +258,7 @@ class compression:
  
                                     
                                     Extract1=0
-                                    Times_10=1
+                                    Multiply=1
                                     counts=-1
                                   
                                     Plus=-1
@@ -267,7 +267,7 @@ class compression:
                                     Divide=1  
                                     
                                     SQUEAR_OF_ROOT=-1
-                                    Multiply_times=0
+                                    Multiply_Times=0
 
                                     while Extract1!=1:
                                         
@@ -314,10 +314,10 @@ class compression:
                                             
                                             Divide=int(University_file[0:(X2*8)],2)
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Times_10=int(University_file[(X2*8)+8:(X2*8)+16],2)
+                                            Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Plus=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Multiply_times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             counts+=1
                                             if SQUEAR_OF_ROOT>=68719476736:
                                                 SQUEAR_OF_ROOT=0
@@ -340,8 +340,8 @@ class compression:
                                             if Times_12==0:
                                                 Times_12=1 
                                             
-                                            if Times_10==0:
-                                                Times_10=1 
+                                            if Multiply==0:
+                                                Multiply=1 
                                            
                                             
         
@@ -369,13 +369,13 @@ class compression:
     
                                            
                                             File_information52=format(SQUEAR_OF_ROOT,'024b')
-                                            File_information53=format(Times_10,'024b')
+                                            File_information53=format(Multiply,'024b')
                                             
                                             
 
                                             Add_N=format(Plus,'024b')
-                                            if   File_information6_times2==0:
-                                                File_information54=format(Multiply_times,'040b')
+                                            if   File_information6_Times2==0:
+                                                File_information54=format(Multiply_Times,'040b')
                                                 File_information5_2=File_information54
                                                 
                  
@@ -396,7 +396,7 @@ class compression:
                                                
                                            
                                             
-                                            File_information53=format(Times_10,'024b')                                            
+                                            File_information53=format(Multiply,'024b')                                            
                                             
                                                                                    
                                             
@@ -414,7 +414,7 @@ class compression:
     
                                             add_bits=""
     
-                                            Times_6=""
+                                            Clear=""
     
                                             #Extract
     
@@ -422,7 +422,7 @@ class compression:
                                             Translate_info_Decimal=""
                                           
                                            
-                                            Times_6=""
+                                            Clear=""
                                         
                                             Number_of_the_file=0
                                           
@@ -430,7 +430,7 @@ class compression:
                                             C=1
                                          
                                             if C==1:
-                                                if   File_information6_times2==0:
+                                                if   File_information6_Times2==0:
     
                                                          
     
@@ -451,16 +451,16 @@ class compression:
                                                         
                                                       
                                                         
-                                                        Times_6=File_information53
+                                                        Clear=File_information53
                                                         Add_N=Add_N
                                                         
-                                                        T = int(Times_6, 2)
+                                                        T = int(Clear, 2)
                                                         Add= int(Add_N, 2)
                                                         long_16=len(File_information54)
                                                         #print("Deep: ")
                                                         #print(Deep7-25)
                                                         Times_half_Real=0
-                                                if   File_information6_times2>0:
+                                                if   File_information6_Times2>0:
                                                         Translate_info_Decimal_2=0
                                                         
                                                 
@@ -482,11 +482,11 @@ class compression:
                                                             Number_of_the_file=0
                                           
                                                         Hole_Number_information=(2**Deep5)-1
-                                                        add_ones_together=Hole_Number_information
+                                                        Square_of_ROOT=Hole_Number_information
                                                 
                                                 
                                                                                          
-                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Plus)//3)*Times_10)//Divide
+                                                        Number_of_the_file=((((Number_of_the_file*Square_of_ROOT)+Plus)//3)*Multiply)//Divide
 
                                                         
                                                         
@@ -518,19 +518,19 @@ class compression:
     
                                             if i==1:
                                                 Make_togher=""
-                                                Make_togher=Times_6
+                                                Make_togher=Clear
                                                 
                                                 add_bits=""
                                                 if C==1 and Times_12!=0:
-                                                        File_information6_times2=File_information6_times2+1
+                                                        File_information6_Times2=File_information6_Times2+1
     
                                                 long_19=len(File_information5_17)
-                                                #print(File_information6_times2)
+                                                #print(File_information6_Times2)
                                                 
                                                 
-                                                if  File_information6_times2==Times_12:
-                                                        File_information6_times2_1=File_information6_times2
-                                                        File_information6_times2=0
+                                                if  File_information6_Times2==Times_12:
+                                                        File_information6_Times2_1=File_information6_Times2
+                                                        File_information6_Times2=0
                                                         
                                                         
                                                         if int(INFO,2)==Number_of_the_file:  
@@ -540,7 +540,7 @@ class compression:
 
                                                                        C=1
                                                                 #print(File_information5_17)
-                                                if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
+                                                if int(INFO,2)==Number_of_the_file and File_information6_Times2_1==Times_12:
                                                        long_1=len(File_information5_17)
                                                        Time_Real3=bin(long_12)[2:]
                                                        T1=len(Time_Real3)
@@ -609,7 +609,7 @@ class compression:
 
 
 
-                                                       if int(INFO,2)==Number_of_the_file and File_information6_times2_1==Times_12:
+                                                       if int(INFO,2)==Number_of_the_file and File_information6_Times2_1==Times_12:
 
 
                                                                File_information5_17="1"+XN+Counts+long_file
@@ -642,7 +642,7 @@ class compression:
                                             width_bits2=len(width_bits3)
                                             add_bitszzza=""
                                             add_bitszs=""
-                                            File_information5_2=Times_6
+                                            File_information5_2=Clear
                                             name=name+"/"
                                             name_2=str(counts)
                                             ML=len(name_2)
@@ -703,11 +703,11 @@ class compression:
                                  
                                     if C==1:
                                         
-                                        if   File_information6_times2==0:
+                                        if   File_information6_Times2==0:
                                             File_information5=INFO
                                             #print(INFO)
                                            
-                                        if   File_information6_times2==0:
+                                        if   File_information6_Times2==0:
                                 
                                                 long_16=len(File_information5)
                                                 
@@ -781,7 +781,7 @@ class compression:
  
                                     
                                     Extract1=0
-                                    Times_10=1
+                                    Multiply=1
                                   
                                     Plus=-1
                                     Times_12=1
@@ -790,7 +790,7 @@ class compression:
                                     Divide=1  
                                     counts=-1
                                     SQUEAR_OF_ROOT=-1
-                                    Multiply_times=0
+                                    Multiply_Times=0
 
                                     while Extract1!=1:
                                         
@@ -838,10 +838,10 @@ class compression:
                                             
                                             Divide=int(University_file[0:(X2*8)],2)
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
-                                            Times_10=int(University_file[(X2*8)+8:(X2*8)+16],2)
+                                            Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
                                             Plus=int(University_file[(X2*8)+16:(X2*8)+24],2)
                                             SQUEAR_OF_ROOT=int(University_file[(X2*8)+24:(X2*8)+32],2)
-                                            Multiply_times=int(University_file[(X2*8)+32:(X2*8)+40],2)
+                                            Multiply_Times=int(University_file[(X2*8)+32:(X2*8)+40],2)
                                             counts+=1
                                             #print(counts)
                                             if SQUEAR_OF_ROOT>=68719476736:
@@ -865,8 +865,8 @@ class compression:
                                             if Times_12==0:
                                                 Times_12=1 
                                             
-                                            if Times_10==0:
-                                                Times_10=1 
+                                            if Multiply==0:
+                                                Multiply=1 
                                            
                                             
         
@@ -894,13 +894,13 @@ class compression:
     
                                            
                                             File_information52=format(SQUEAR_OF_ROOT,'024b')
-                                            File_information53=format(Times_10,'024b')
+                                            File_information53=format(Multiply,'024b')
                                             
                                             
 
                                             Add_N=format(Plus,'024b')
-                                            if   File_information6_times2==0:
-                                                File_information54=format(Multiply_times,'040b')
+                                            if   File_information6_Times2==0:
+                                                File_information54=format(Multiply_Times,'040b')
                                                 File_information5_2=File_information54
                                                 
                  
@@ -921,7 +921,7 @@ class compression:
                                                
                                            
                                             
-                                            File_information53=format(Times_10,'024b')                                            
+                                            File_information53=format(Multiply,'024b')                                            
                                             
                                                                                    
                                             
@@ -939,7 +939,7 @@ class compression:
     
                                             add_bits=""
     
-                                            Times_6=""
+                                            Clear=""
     
                                             #Extract
     
@@ -947,7 +947,7 @@ class compression:
                                             Translate_info_Decimal=""
                                           
                                            
-                                            Times_6=""
+                                            Clear=""
                                         
                                             Number_of_the_file=0
                                           
@@ -955,7 +955,7 @@ class compression:
                                             C=1
                                          
                                             if C==1:
-                                                if   File_information6_times2==0:
+                                                if   File_information6_Times2==0:
     
                                                          
     
@@ -976,16 +976,16 @@ class compression:
                                                         
                                                       
                                                         
-                                                        Times_6=File_information53
+                                                        Clear=File_information53
                                                         Add_N=Add_N
                                                         
-                                                        T = int(Times_6, 2)
+                                                        T = int(Clear, 2)
                                                         Add= int(Add_N, 2)
                                                         long_16=len(File_information54)
                                                         #print("Deep: ")
                                                         #print(Deep7-25)
                                                         Times_half_Real=0
-                                                if   File_information6_times2>0:
+                                                if   File_information6_Times2>0:
                                                         Translate_info_Decimal_2=0
                                                         
                                                 
@@ -1007,11 +1007,11 @@ class compression:
                                                             Number_of_the_file=0
                                           
                                                         Hole_Number_information=(2**Deep5)-1
-                                                        add_ones_together=Hole_Number_information
+                                                        Square_of_ROOT=Hole_Number_information
                                                 
                                                 
                                                                                          
-                                                        Number_of_the_file=((((Number_of_the_file*add_ones_together)+Plus)//3)*Times_10)//Divide
+                                                        Number_of_the_file=((((Number_of_the_file*Square_of_ROOT)+Plus)//3)*Multiply)//Divide
 
                                                         
                                                         
@@ -1043,19 +1043,19 @@ class compression:
     
                                             if i==2:
                                                 Make_togher=""
-                                                Make_togher=Times_6
+                                                Make_togher=Clear
                                                 
                                                 add_bits=""
                                                 if C==1 and Times_12!=0:
-                                                        File_information6_times2=File_information6_times2+1
+                                                        File_information6_Times2=File_information6_Times2+1
     
                                                 long_19=len(File_information5_17)
-                                                #print(File_information6_times2)
+                                                #print(File_information6_Times2)
                                                 
                                                 
-                                                if  File_information6_times2==Times_12:
-                                                        File_information6_times2_1=File_information6_times2
-                                                        File_information6_times2=0
+                                                if  File_information6_Times2==Times_12:
+                                                        File_information6_Times2_1=File_information6_Times2
+                                                        File_information6_Times2=0
                                                         if int(INFO,2)==Number_of_the_file:  
 
 
@@ -1063,7 +1063,7 @@ class compression:
 
                                                                        C=1
                                                                 #print(File_information5_17)
-                                                if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR:
+                                                if Extract_info==counts and File_information6_Times2_1==Times_12 and X1==XR:
                                                        long_1=len(File_information5_17)
 
 
@@ -1083,7 +1083,7 @@ class compression:
 
 
 
-                                                       if Extract_info==counts and File_information6_times2_1==Times_12 and X1==XR:
+                                                       if Extract_info==counts and File_information6_Times2_1==Times_12 and X1==XR:
              
 
 
@@ -1105,7 +1105,7 @@ class compression:
                                             width_bits2=len(width_bits3)
                                             add_bitszzza=""
                                             add_bitszs=""
-                                            File_information5_2=Times_6
+                                            File_information5_2=Clear
                                           
                     
                                            
