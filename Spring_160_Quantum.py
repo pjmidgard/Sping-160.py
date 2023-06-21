@@ -164,7 +164,10 @@ class compression:
                                                 X2=1
                                                 k3=-2
                                                 k4=-1                                                                          
-                                                University_file=format(University,C11)
+                                                
+                                                    
+                                  
+                                            University_file=format(University,C11)
                                             Divide=int(University_file[0:(X2*8)],2)
                                             Times_12=int(University_file[(X2*8):(X2*8)+8],2)
                                             Multiply=int(University_file[(X2*8)+8:(X2*8)+16],2)
