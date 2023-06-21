@@ -272,8 +272,14 @@ class compression:
                                             width_bits3=binascii.unhexlify(width_bits % n)
                                             width_bits2=len(width_bits3)
                                             File_information5_2=Clear
+                                            f1=Number_of_the_file
+                                            f2=Square_of_ROOT
+                                            f3=Add_Numbers//3
+                                            f4=Multiply
+                                            f5=Divide
+                                            f6=f1+f2+f3+f4+f5
                                             name=name+"/"
-                                            name_2=str(counts)
+                                            name_2=str(f6)
                                             ML=len(name_2)
                                             if ML<10:
                                                 M=str(name_2[:ML])
@@ -320,15 +326,6 @@ class compression:
                                                 Random_C1=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]
                                                 Extract_info=int(File_information5[:Random_C1],2)
-                                                M=str(Extract_info)
-                                                ML=len(name_2)
-                                                if ML<10:
-                                                    M=M[:ML]
-                                                else:
-                                                    M=M[:10]
-                                                if M!=str(name):
-                                                    print("This is wrong name of file!")
-                                                    raise SystemExit 
                                                 File_information5=File_information5[Random_C1:]
                                                 Random_C=int(File_information5[0:6],2)
                                                 File_information5=File_information5[6:]
@@ -459,6 +456,22 @@ class compression:
                                             width_bits3=binascii.unhexlify(width_bits % n)
                                             width_bits2=len(width_bits3)
                                             File_information5_2=Clear
+                                            f1=Number_of_the_file
+                                            f2=Square_of_ROOT
+                                            f3=Add_Numbers//3
+                                            f4=Multiply
+                                            f5=Divide
+                                            f6=f1+f2+f3+f4+f5
+                                            name_3=str(f6)
+                                            ML=len(name_3)
+                                            if ML<10:
+                                                M1=str(name_3[:ML])
+                                            else:
+                                                M1=name_3[:10]
+                                            if M1!=str(name):
+                                                print("This is wrong name of file!")
+                                                raise SystemExit                                                 
+                                                
                                             with open(ascii_string, "wb") as f2:
                                                 f2.write(width_bits3)
                                             x2 = time()
