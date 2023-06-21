@@ -124,7 +124,7 @@ class compression:
                                         raise SystemExit
                                 if i==1:
                                     from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(2**805306368)
+                                    circuit = QuantumCircuit(2**805306370)
                                     circuit1 = QuantumCircuit(44739242) 
                                     k1=-2
                                     k2=-1
@@ -348,7 +348,7 @@ class compression:
                                                 long=int(File_information5[:Random_C],2)
                                                 File_information5=File_information5[Random_C:]                                                      
                                     from qiskit.circuit import QuantumCircuit
-                                    circuit = QuantumCircuit(2**805306368)
+                                    circuit = QuantumCircuit(2**805306370)
                                     circuit1 = QuantumCircuit(44739242) 
                                     k1=-2
                                     k2=-1
