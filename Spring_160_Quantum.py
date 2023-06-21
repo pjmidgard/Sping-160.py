@@ -143,7 +143,7 @@ class compression:
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
-                                            if k1==2**805306368:
+                                            if k1==2**805306369:
                                                 k1=-1
                                                 k2=0
                                             circuit.cp(University, k1, k2)
@@ -367,7 +367,7 @@ class compression:
                                     while Extract1!=1:
                                             k1+=1
                                             k2+=1
-                                            if k1==2**805306368:
+                                            if k1==2**805306369:
                                                 k1=-1
                                                 k2=0
                                             circuit.cp(University, k1, k2)
