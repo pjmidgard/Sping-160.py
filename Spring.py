@@ -476,7 +476,7 @@ class compression:
                                             else:
                                                 print("file_decrypted")
                                             if M1!=str(key):
-                                                print("This is wrong name of file!")
+                                                print("Wrong key")
                                                 raise SystemExit
 
                                             with open(ascii_string, "wb") as f2:

@@ -22,6 +22,7 @@ class compression:
                         i=2
                     Clear=""
                     name = input("What is name of file?")
+                    name=str(name)
                     if i==2:
                         key = input("Please,Enter key")
                     if os.path.exists(name):
@@ -504,7 +505,7 @@ class compression:
                                                 print("file_decrypted")
 
                                             if M1!=str(key):
-                                                print("This is wrong name of file!")
+                                                print("Wrong key")
                                                 raise SystemExit
                                             with open(ascii_string, "wb") as f2:
                                                 f2.write(width_bits3)
