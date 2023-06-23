@@ -298,7 +298,6 @@ class compression:
                                             ML=len(name_2)
                                             if ML<10:
                                                 M=str(name_2[:ML])
-                                                print(M)
                                             else:
                                                 M=name_2[:10]
                                             print(M)
