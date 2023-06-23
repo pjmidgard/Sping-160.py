@@ -22,6 +22,8 @@ class compression:
                         i=2
                     Clear=""
                     name = input("What is name of file?")
+                    if i==2:
+                        key = input("Please,Enter key")
                     if os.path.exists(name):
                             print('Path is exists!')
                     else:
@@ -296,8 +298,10 @@ class compression:
                                             ML=len(name_2)
                                             if ML<10:
                                                 M=str(name_2[:ML])
+                                                print(M)
                                             else:
                                                 M=name_2[:10]
+                                            print(M)
                                             with open("1", "w") as f6:
                                                 f6.write(name)
                                             with open("1", "ab") as f2:
@@ -500,6 +504,9 @@ class compression:
                                             else:
                                                 print("file_decrypted")
 
+                                            if M1!=str(key):
+                                                print("This is wrong name of file!")
+                                                raise SystemExit
                                             with open(ascii_string, "wb") as f2:
                                                 f2.write(width_bits3)
                                             x2 = time()
