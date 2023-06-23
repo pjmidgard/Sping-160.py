@@ -285,9 +285,9 @@ class compression:
                                                 M=str(name_2[:ML])
                                             else:
                                                 M=name_2[:10]
-                                            with open(M, "w") as f6:
+                                            with open("1", "w") as f6:
                                                 f6.write(name)
-                                            with open(M, "ab") as f2:
+                                            with open("1", "ab") as f2:
                                                 f2.write(width_bits3)
                                             x2 = time()
                                             x3=x2-x
