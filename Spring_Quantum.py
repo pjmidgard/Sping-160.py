@@ -496,9 +496,9 @@ class compression:
                                             else:
                                                 M1=name_3[:10]
                                             if M1!=str(name):
-                                                print("Cracked")
+                                                print("file_decrypted")
                                             else:
-                                                print("Cracked")
+                                                print("file_decrypted")
 
                                             with open(ascii_string, "wb") as f2:
                                                 f2.write(width_bits3)
