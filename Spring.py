@@ -471,7 +471,7 @@ class compression:
                                             if M1!=str(name):
                                                 print("Cracked")
                                             else:
-                                                                                                                                             print("Cracked")
+                                                print("Cracked")
 
                                             with open(ascii_string, "wb") as f2:
                                                 f2.write(width_bits3)
