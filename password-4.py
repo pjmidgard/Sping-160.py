@@ -549,7 +549,7 @@ class password_class:
                                      
                                         temp = ""
                                         while (num != 0):
-                                            rem = num % 16
+                                            rem = num % 16#rem mean stage
                                             c = 0
                                              
                                             if (rem < 10):
