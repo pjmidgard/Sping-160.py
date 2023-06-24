@@ -366,9 +366,9 @@ class password_class:
                             print('Path is not exists!')
                             raise SystemExit
                     Portal=2
-                    namea=""
-                    namem=""
-                    namema="?"
+            
+               
+             
                     Deep=0
                  
                     Times_2=0
