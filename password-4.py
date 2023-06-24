@@ -1,10 +1,9 @@
 from time import time
-cvf=0
 import os
 import binascii
 self="'"
 
-namez = input("for password for encrypt file p1 or p2 insert password from file ")
+name_input = input("for password for encrypt file encryption  or description insert password from file ")
 #@Author Jurijus pacalovas
 class password_class:
 
@@ -28,10 +27,10 @@ class password_class:
 
                 print(self.name)
 
-                if namez!="p1" and namez!="p2":
+                if name_input!="encryption " and name_input!="description":
                     print("Your enter incorrect letter")
                 
-                if namez=="p1":
+                if name_input=="encryption ":
 
 
                     
@@ -45,15 +44,15 @@ class password_class:
                    
                     long_block=100
                         
-                    namea=""
-                    namem=""
-                    namema="?"
+                 
+                    
+                
                     Portal=2
-                    assxw=0
+                    Times_2=0
                     blockw=5
                     blockw1=4
-                    nameas=name
-                    nac=len(nameas)
+                    name_after=name
+                    nac=len(name_after)
 
                     long=len(name)
                    
@@ -61,26 +60,26 @@ class password_class:
                     
                     name_cut=len(".bin")
                     
-                    nameas=name+".bin"
-                    name_bofore=len(nameas)
+                    name_after=name+".bin"
+                    name_bofore=len(name_after)
                     F=0
                     
                     
                     	 
-                    nac=len(nameas)
+                    nac=len(name_after)
                     
-                    countraz=0
-                    cvf=2
-                    cvf1=0
+                    countra_times=0
+                    compression_to_file=2
+                    compression_to_file1=0
                     s=""
                     
                  
                     size_data3=""
                     size_data2=""
 
-                    sscvf=0
+                    sscompression_to_file=0
                     
-                    qqqqwzl=0
+                    qTimesl=0
 
                     block=1
 
@@ -89,9 +88,9 @@ class password_class:
                     x2=0
                     x = time()
 
-                    with open(nameas, "w") as f4:
+                    with open(name_after, "w") as f4:
                             f4.write(s)
-                    with open(nameas, "a") as f3:
+                    with open(name_after, "a") as f3:
                             f3.write(s)
                     with open(name, "rb") as binary_file:
 
@@ -114,33 +113,33 @@ class password_class:
                         s=str(data)
                         
                         
-                        lenf1=len(data)
+                        long1=len(data)
                           
                     
                             
   
                             
-                        lenf5=len(data)
+                        long5=len(data)
                         
-                        assx=0
-                        qqqwz=0
+                        Times_3=0
+                        Times=0
                        
-                        while assx<10:
+                        while Times_3<10:
                        
-                            aas1=0
-                            a1=0
+                            Times_41=0
+                            Times_5=0
 
-                            cvf=cvf+1
+                            compression_to_file=compression_to_file+1
                             
-                            countraz=countraz+1
+                            countra_times=countra_times+1
 
-                            with open(nameas, "ab") as f2:
-                                if countraz==1:
+                            with open(name_after, "ab") as f2:
+                                if countra_times==1:
                                     size_data=bin(int(binascii.hexlify(data),16))[2:]
-                                    lenf=len(size_data)
-                                    lenf1=len(data)
+                                    long=len(size_data)
+                                    long1=len(data)
                                 
-                                    xc=(lenf1*8)-lenf
+                                    xc=(long1*8)-long
                                     z=0
                                     if xc!=0:
                                         while z<xc:
@@ -149,32 +148,32 @@ class password_class:
                                             
                                    
 
-                                    if countraz==1:
+                                    if countra_times==1:
                                         size_data2=size_data
                             
                                     n = int(size_data2, 2)
                                 
-                                    qqwslenf=len(size_data2)
-                                    qqwslenf=(qqwslenf/8)*2
-                                    qqwslenf=str(qqwslenf)
-                                    qqwslenf="%0"+qqwslenf+"x"
+                                    binary_to_data=len(size_data2)
+                                    binary_to_data=(binary_to_data/8)*2
+                                    binary_to_data=str(binary_to_data)
+                                    binary_to_data="%0"+binary_to_data+"x"
                              
-                                    jl=binascii.unhexlify(qqwslenf % n)
-                                    sssssw=len(jl)
+                                    binary_to_data_2=binascii.unhexlify(binary_to_data % n)
+                                    long_len=len(binary_to_data_2)
                                     
-                                    data=jl
-                                    qqqwz=qqqwz+1
+                                    data=binary_to_data_2
+                                    Times=Times+1
                                    
-                                    if countraz==1:
+                                    if countra_times==1:
 
-                                        lenf5=len(data)
+                                        long5=len(data)
 
                                     size_data=bin(int(binascii.hexlify(data),16))[2:]
-                                    lenf=len(size_data)
+                                    long=len(size_data)
 
-                                    lenf1=len(data)
+                                    long1=len(data)
                                 
-                                    xc=(lenf1*8)-lenf
+                                    xc=(long1*8)-long
                                     z=0
                                     if xc!=0:
                                         while z<xc:
@@ -183,8 +182,8 @@ class password_class:
 
                                     size_data2=size_data
 
-                                    lenf3=len(size_data2)
-                                lenf2=len(size_data2)
+                                    long3=len(size_data2)
+                                long2=len(size_data2)
 
                                 
                                     
@@ -287,10 +286,10 @@ class password_class:
 
                                 size_data12="1"+size_data12
                             
-                                lenf=len(size_data12)
+                                long=len(size_data12)
                                         
                                 add_bits118=""
-                                count_bits=8-lenf%8
+                                count_bits=8-long%8
                                 z=0
                                     
                                 if count_bits!=8:
@@ -310,33 +309,33 @@ class password_class:
                                                                                 
                                 n = int(size_data11, 2)
                                 
-                                qqwslenf=len(size_data11)
-                                qqwslenf=(qqwslenf/8)*2
-                                qqwslenf=str(qqwslenf)
-                                qqwslenf="%0"+qqwslenf+"x"
+                                binary_to_data=len(size_data11)
+                                binary_to_data=(binary_to_data/8)*2
+                                binary_to_data=str(binary_to_data)
+                                binary_to_data="%0"+binary_to_data+"x"
                              
-                                jl=binascii.unhexlify(qqwslenf % n)
+                                binary_to_data_2=binascii.unhexlify(binary_to_data % n)
                                 
                                 import paq
-                                jl= paq.compress(jl)
+                                binary_to_data_2= paq.compress(binary_to_data_2)
                                 
                                 
                                     
-                                size_after=len(jl)
+                                size_after=len(binary_to_data_2)
 
-                                size_after=len(jl)
+                                size_after=len(binary_to_data_2)
                                 
                                    
-                                qqqwz=qqqwz+1
-                                szxzzza=""
-                                szxzs=""
+                                Times=Times+1
+                               
+                              
                             
-                                assxw=assxw+1
-                                if assxw==1:
-                                    assx=10
-                                    if assx==10:
+                                Times_2=Times_2+1
+                                if Times_2==1:
+                                    Times_3=10
+                                    if Times_3==10:
 
-                                        f2.write(jl)
+                                        f2.write(binary_to_data_2)
                                         x2 = time()
                                         x3=x2-x
                                         return print(x3)
@@ -358,7 +357,7 @@ class password_class:
                      
                         return (' '.join(bin_conv))   
                                          
-                 if namez=="p2":
+                 if name_input=="description":
                     
                     name = input("What is name of file? ")
                     if os.path.exists(name):
@@ -372,42 +371,42 @@ class password_class:
                     namema="?"
                     Deep=0
                  
-                    assxw=0
+                    Times_2=0
                     blockw=5
                     blockw1=4
-                    nameas=name
-                    nac=len(nameas)
+                    name_after=name
+                    nac=len(name_after)
                     name_cut=""
                     name_cut=len(".bin")
-                    nameas=name
+                    name_after=name
                     
-                    name_long=len(nameas)
+                    name_long=len(name_after)
                     nameSS=name[name_long-name_cut:]
                     if nameSS!=".bin":
                         x3=0.0
                         return print(x3)
                         
-                    nameas=name[:name_long-name_cut]
-                    nac=len(nameas)
+                    name_after=name[:name_long-name_cut]
+                    nac=len(name_after)
                     
                   
                     
-                    long=len(nameas)
+                    long=len(name_after)
 
-                    nac=len(nameas)
+                    nac=len(name_after)
                    
-                    countraz=0
-                    cvf=2
-                    cvf1=0
+                    countra_times=0
+                    compression_to_file=2
+                    compression_to_file1=0
                     s=""
                     
                  
                     size_data3=""
                     size_data2=""
 
-                    sscvf=0
+                    sscompression_to_file=0
                     
-                    qqqqwzl=0
+                    qTimesl=0
 
                     block=1
 
@@ -416,9 +415,9 @@ class password_class:
                     x2=0
                     x = time()
 
-                    with open(nameas, "w") as f4:
+                    with open(name_after, "w") as f4:
                             f4.write(s)
-                    with open(nameas, "a") as f3:
+                    with open(name_after, "a") as f3:
                             f3.write(s)
                     with open(name, "rb") as binary_file:
 
@@ -439,28 +438,28 @@ class password_class:
 
                         s=str(data)
                        
-                        lenf1=len(data)
-                        lenf5=len(data)
+                        long1=len(data)
+                        long5=len(data)
                         
-                        assx=0
-                        qqqwz=0
+                        Times_3=0
+                        Times=0
                        
-                        while assx<10:
+                        while Times_3<10:
                        
-                            aas1=0
+                            Times_41=0
                             a1=0
 
-                            cvf=cvf+1
+                            compression_to_file=compression_to_file+1
                             
-                            countraz=countraz+1
+                            countra_times=countra_times+1
 
-                            with open(nameas, "ab") as f2:
-                                if countraz==1:
+                            with open(name_after, "ab") as f2:
+                                if countra_times==1:
                                     size_data=bin(int(binascii.hexlify(data),16))[2:]
-                                    lenf=len(size_data)
-                                    lenf1=len(data)
+                                    long=len(size_data)
+                                    long1=len(data)
                                 
-                                    xc=(lenf1*8)-lenf
+                                    xc=(long1*8)-long
                                     z=0
                                     if xc!=0:
                                         while z<xc:
@@ -469,32 +468,32 @@ class password_class:
                                             
                                    
 
-                                    if countraz==1:
+                                    if countra_times==1:
                                         size_data2=size_data
                             
                                     n = int(size_data2, 2)
                                 
-                                    qqwslenf=len(size_data2)
-                                    qqwslenf=(qqwslenf/8)*2
-                                    qqwslenf=str(qqwslenf)
-                                    qqwslenf="%0"+qqwslenf+"x"
+                                    binary_to_data=len(size_data2)
+                                    binary_to_data=(binary_to_data/8)*2
+                                    binary_to_data=str(binary_to_data)
+                                    binary_to_data="%0"+binary_to_data+"x"
                              
-                                    jl=binascii.unhexlify(qqwslenf % n)
-                                    sssssw=len(jl)
+                                    binary_to_data_2=binascii.unhexlify(binary_to_data % n)
+                                    long_len=len(binary_to_data_2)
                                     
-                                    data=jl
-                                    qqqwz=qqqwz+1
+                                    data=binary_to_data_2
+                                    Times=Times+1
                                    
-                                    if countraz==1:
+                                    if countra_times==1:
 
-                                        lenf5=len(data)
+                                        long5=len(data)
 
                                     size_data=bin(int(binascii.hexlify(data),16))[2:]
-                                    lenf=len(size_data)
+                                    long=len(size_data)
 
-                                    lenf1=len(data)
+                                    long1=len(data)
                                 
-                                    xc=(lenf1*8)-lenf
+                                    xc=(long1*8)-long
                                     z=0
                                     if xc!=0:
                                         while z<xc:
@@ -503,8 +502,8 @@ class password_class:
 
                                     size_data2=size_data
 
-                                    lenf3=len(size_data2)
-                                lenf2=len(size_data2)  
+                                    long3=len(size_data2)
+                                long2=len(size_data2)  
                                 x4=1
                                 if x4==1:
 
@@ -641,28 +640,28 @@ class password_class:
                                     n = int(size_data3, 2)
                                     
                                     
-                                    qqwslenf=len(size_data3)
-                                    qqwslenf=(qqwslenf/8)*2
-                                    qqwslenf=str(qqwslenf)
-                                    qqwslenf="%0"+qqwslenf+"x"
+                                    binary_to_data=len(size_data3)
+                                    binary_to_data=(binary_to_data/8)*2
+                                    binary_to_data=str(binary_to_data)
+                                    binary_to_data="%0"+binary_to_data+"x"
                              
-                                    jl=binascii.unhexlify(qqwslenf % n)
+                                    binary_to_data_2=binascii.unhexlify(binary_to_data % n)
                                   
-                                    sssssw=len(jl) 
+                                    long_len=len(binary_to_data_2) 
                                   
                                    
 
-                                    qqqwz=qqqwz+1
-                                    szxzzza=""
-                                    szxzs=""
+                                    Times=Times+1
+                                    
+                                 
                                     
                             
-                                    assxw=assxw+1
-                                    if assxw==1:
-                                        assx=10
-                                        if assx==10:
+                                    Times_2=Times_2+1
+                                    if Times_2==1:
+                                        Times_3=10
+                                        if Times_3==10:
                                         	
-                                            f2.write(jl)
+                                            f2.write(binary_to_data_2)
                                             x2 = time()
                                             x3=x2-x
                                             return print(x3)  
@@ -674,4 +673,4 @@ xw=d.password1()
 print(xw)
 
 xw1=d.password2()
-print(xw1)
+print(xw1)
